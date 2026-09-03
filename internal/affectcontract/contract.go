@@ -10,6 +10,7 @@ type Action string
 const (
 	ActionWait   Action = "WAIT"
 	ActionCommit Action = "COMMIT"
+	ActionHold   Action = "HOLD"
 	ActionRevise Action = "REVISE"
 )
 
@@ -66,6 +67,8 @@ func (c *Contract) Observe(observation Observation) (Decision, error) {
 		action = ActionCommit
 		if c.committed != nil && *c.committed != observation.ProvisionalState {
 			action = ActionRevise
+		} else if c.committed != nil {
+			action = ActionHold
 		}
 		c.setCommitted(observation.ProvisionalState)
 	} else if c.committed == nil && observation.CorrectnessProbability >= c.threshold {
@@ -74,6 +77,8 @@ func (c *Contract) Observe(observation Observation) (Decision, error) {
 	} else if c.committed != nil && *c.committed != observation.ProvisionalState && observation.CorrectnessProbability >= c.threshold+c.margin {
 		action = ActionRevise
 		c.setCommitted(observation.ProvisionalState)
+	} else if c.committed != nil {
+		action = ActionHold
 	}
 	return Decision{Action: action, ProvisionalState: observation.ProvisionalState, CommittedState: clone(c.committed), SeenModalities: append([]string(nil), c.order...), Final: final}, nil
 }

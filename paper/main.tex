@@ -26,7 +26,7 @@
 \maketitle
 
 \begin{abstract}
-Multimodal affect recognition typically assumes that text, audio, and vision are all available, whereas an interactive agent may receive them at different times. We formulate asynchronous affect commitment and introduce the Anytime Multimodal Affect Contract (\method), which estimates current-prefix correctness and maps it to \textsc{wait}, \textsc{commit}, \textsc{hold}, or \textsc{revise}. The terminal state is forced to the complete-modality prediction, separating commitment quality from final recognition. On the official CH-SIMS v2 split under all six simulated modality orders, \method{} reduces preterminal committed error by 12.14 percentage points and revisions by 11.67 points relative to a grid-selected fixed-confidence policy at approximately 91\% stage-two coverage. Because 127 of 142 test source-video groups also occur in training, these are benchmark-compatible operating-point results rather than evidence of cross-source generalization; a post-hoc 15-group disjoint subset retains the error direction only as small-sample evidence. A method-locked diagnostic distinguishes the nine-feature estimator from two monotone maps of the fixed score $g$, not scalar confidence estimation in general. An annotation-derived EmotionTalk check retains the error direction but reverses revision across three held-out groups. A Go tool reproduces 18,612 frozen offline decisions, establishing implementation fidelity rather than live asynchronous performance. \method{} therefore exposes commitment as a measurable layer between multimodal perception and action.
+Multimodal affect recognition typically assumes that text, audio, and vision are all available, whereas an interactive agent may receive them at different times. We formulate asynchronous affect commitment and introduce the Anytime Multimodal Affect Contract (\method), which estimates current-prefix correctness and maps it to \textsc{wait}, \textsc{commit}, \textsc{hold}, or \textsc{revise}. We call the contract risk-aware at the system level because it controls exposure risk using this correctness estimate; the estimate itself is not a risk quantity. The terminal state is forced to the complete-modality prediction, separating commitment quality from final recognition. On the official CH-SIMS v2 split under all six simulated modality orders, \method{} reduces preterminal committed error by 12.14 percentage points and revisions by 11.67 points relative to a grid-selected fixed-confidence policy at approximately 91\% stage-two coverage. Because 127 of 142 test source-video groups also occur in training, these are benchmark-compatible operating-point results rather than evidence of cross-source generalization; a post-hoc 15-group disjoint subset retains the error direction only as small-sample evidence. A method-locked diagnostic distinguishes the nine-feature estimator from two monotone maps of the fixed score $g$, not scalar confidence estimation in general. An annotation-derived EmotionTalk check retains the error direction but reverses revision across three held-out groups. A Go tool reproduces 18,612 frozen offline decisions, establishing implementation fidelity rather than live asynchronous performance. \method{} therefore exposes commitment as a measurable layer between multimodal perception and action.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -59,7 +59,7 @@ Most benchmark protocols evaluate a fixed set of available modalities. Work on u
 
 Selective prediction associates prediction risk with coverage by allowing a model to reject uncertain cases. SelectiveNet learns prediction and rejection jointly \cite{geifman2019selectivenet}. Post-hoc confidence estimators provide an alternative when a deployed predictor cannot be retrained \cite{cattelan2024confidence}. Calibration methods such as Platt scaling and isotonic regression map model scores to empirical probabilities \cite{platt1999probabilistic,zadrozny2002transforming}; temperature-based calibration is also effective for modern neural networks \cite{guo2017calibration}.
 
-Anytime and early-exit models produce intermediate predictions before completing all computation. Patience-based exits use agreement among internal classifiers \cite{zhou2020pabee}. Later work observes that instance-level quality need not improve monotonically across exits \cite{jazbec2023anytime} and applies risk control to the exit decision \cite{jazbec2024risk}. Modality arrival differs from network depth because each step changes the evidence type rather than adding another layer of the same computation. A later modality can reverse the inferred affect state, and an interactive agent must manage the already exposed state. \method{} consequently models both first commitment and revision instead of a single reject-or-exit event.
+Anytime and early-exit models produce intermediate predictions before completing all computation. Patience-based exits use agreement among internal classifiers \cite{zhou2020pabee}. Later work observes that instance-level quality need not improve monotonically across exits \cite{jazbec2023anytime} and applies risk control to the exit decision \cite{jazbec2024risk}. Modality arrival differs from network depth because each step changes the evidence type rather than adding another layer of the same computation. A later modality can reverse the inferred affect state, and an interactive agent must manage the already exposed state. \method{} consequently models first commitment, silent retention (\textsc{hold}), and revision instead of a single reject-or-exit event.
 
 \subsection{Affective Agents}
 
@@ -69,7 +69,7 @@ Multimodal conversational-agent platforms have incorporated emotion recognition,
 
 \subsection{Asynchronous Modality Prefixes}
 
-Let a clip $i$ contain modalities $\mathcal{M}=\{T,A,V\}$ and a continuous sentiment label $y_i$. A modality order $\pi$ is one of the six permutations of $\mathcal{M}$. At stage $k\in\{1,2,3\}$, the visible subset is
+Let a clip $i$ contain modalities $\mathcal{M}=\{T,A,V\}$ and a continuous sentiment label $y_i$. A modality order $\pi$ is one of the six permutations of $\mathcal{M}$. At stage $k \in \{1,2,3\}$, the visible subset is
 \begin{equation}
 S_{i,k}^{\pi}=\{\pi_1,\ldots,\pi_k\}.
 \end{equation}
@@ -92,7 +92,7 @@ where $\hat r$ denotes the model estimate of current-prefix correctness and $z$ 
 
 \subsection{Commitment Contract}
 
-The contract stores either no committed state, denoted $\varnothing$, or the most recently committed state $c_{i,k}^{\pi}$. Two parameters are frozen before evaluation: a first-commit threshold $\tau$ and a revision margin $\delta$. For $k<3$, the update is
+The contract stores either no committed state, denoted $\varnothing$, or the most recently committed state $c_{i,k}^{\pi}$. It is initialized as $c_{i,0}^{\pi}:=\varnothing$. Two parameters are frozen before evaluation: a first-commit threshold $\tau$ and a revision margin $\delta$. For $k<3$, the update is
 \begin{equation}
 \small
 c_{i,k}^{\pi}=
@@ -113,7 +113,7 @@ Figure~\ref{fig:overview} summarizes the interface. The prefix-correctness estim
 \begin{figure}[t]
 \centering
 \resizebox{\columnwidth}{!}{\input{figures/amac_overview.tex}}
-\caption{The \method{} interface. Modalities arrive in an arbitrary order. A frozen predictor produces a state for each visible prefix, the prefix-correctness estimator scores its probability of being correct, and the contract chooses \textsc{wait}, \textsc{commit}, \textsc{hold}, or \textsc{revise}. Clip index $i$ is omitted in the diagram. The third modality forces the complete TAV state.}
+\caption{The \method{} interface. Each complete clip is replayed under one of six simulated modality orders. A frozen predictor produces a state for each visible prefix, the prefix-correctness estimator scores its probability of being correct, and the contract chooses \textsc{wait}, \textsc{commit}, \textsc{hold}, or \textsc{revise}. Clip index $i$ is omitted in the diagram. The third modality forces the complete TAV state.}
 \label{fig:overview}
 \end{figure}
 
@@ -249,13 +249,13 @@ The EmotionTalk evaluation is consistent with the committed-error direction in i
 \toprule
 Policy & Error (\%) & Revision (\%) & Coverage (\%) \\
 \midrule
-B2/B4 & 39.11 & 25.53 & 93.51 \\
+B2 & 39.11 & 25.53 & 93.51 \\
 H0 & $33.76\pm0.43$ & $28.51\pm0.77$ & $96.68\pm0.77$ \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-On EmotionTalk, validation selected $(\tau,\delta)=(0.60,0.00)$ for both B2 and B4. Because the revision margin is zero, the two policies produce identical decision trajectories and are reported jointly in the aggregate table.
+EmotionTalk used its separately archived grids $\tau\in\{0,.05,.10,.15,.20,.30,.40,.50,.60,.70,.80,.90\}$ and $\delta\in\{0,.05,.10,.20,.30,.40\}$. Validation selected $(\tau,\delta)=(.60,0)$ for B2; the nominal B4 condition selected the same pair and therefore collapses exactly to B2 rather than testing a positive revision margin. We consequently report the fixed-score comparator as B2, with the identical B4 trajectory retained only for bookkeeping. H0 selected $(.40,.20)$ for seeds 1, 12, 123, and 1234, and $(.40,.10)$ for seed 12345.
 
 \input{generated/emotiontalk_group_table.tex}
 
@@ -293,6 +293,8 @@ The replay establishes implementation fidelity rather than end-to-end responsive
 
 The main result concerns which intermediate states become actionable, not whether the final sentiment regressor is more accurate. Terminal identity holds by construction, while policies with the same terminal state produce different error, revision, and coverage profiles. This separation exposes a deployment choice hidden by complete-input benchmarks. A fixed predictor can support either an unstable agent that exposes every prefix or a cautious agent that waits for all evidence. \method{} occupies the operating region between those endpoints.
 
+Terminal identity also has a user-visible cost: $c_{i,3}^{\pi}=s_{i,3}^{\pi}$ can replace an already correct commitment with an incorrect complete-modality prediction. O1 makes this boundary explicit. Because O1 commits before the terminal stage only when the provisional state equals the label, its 14.33\% revision-per-path rate is induced by forced terminal replacement; whenever the terminal TAV state is wrong, that replacement degrades a previously correct visible state. \method{} therefore guarantees comparability with the frozen terminal predictor, not monotonic correctness of the visible trajectory. A deployment that retains a correct earlier state would require a different terminal contract and would no longer preserve terminal identity.
+
 The near-matched stage-two operating point is central to the primary H0--B4 interpretation. B3 attains low error and revision by withholding most early decisions. H0 instead commits on approximately nine of ten paths by stage 2. The stage-specific and committed-state denominators in Appendix~\ref{app:stage} expose the remaining composition differences rather than treating coverage as a complete control. The prefix-correctness estimator is associated with a different commitment trajectory, while the experiment does not identify a single causal feature.
 
 \subsection{What the Competitive Baselines Establish}
@@ -303,7 +305,7 @@ The gap between LR and the Platt or isotonic maps of $g$ is consistent with the 
 
 \subsection{External Boundary and Agent Implications}
 
-Across the three held-out EmotionTalk groups, H0 had lower preterminal committed error than B2/B4, while revision was higher. This group-by-group pattern is descriptive and does not establish transfer to the broader EmotionTalk population. A deployment should therefore calibrate the trade-off for its own interaction context rather than reuse a claim of universal stability.
+Across the three held-out EmotionTalk groups, H0 had lower preterminal committed error than B2, while revision was higher. The nominal B4 condition has the same zero-margin trajectory as B2 in this experiment and is not evidence about a positive-margin revision barrier. This group-by-group pattern is descriptive and does not establish transfer to the broader EmotionTalk population. A deployment should therefore calibrate the trade-off for its own interaction context rather than reuse a claim of universal stability.
 
 The tool implementation constrains how an agent can use affect estimates. Thresholds are frozen when a session starts, duplicate modalities are rejected, and the third modality restores terminal identity. These rules prevent a language model from improvising its own confidence threshold or silently rewriting an earlier commitment. Downstream response generation remains outside the evidence in this paper. The contract supplies a reliable state transition, not a guarantee that every affect-conditioned response will be appropriate.
 
@@ -322,7 +324,7 @@ The EmotionTalk study uses independent annotation consensus as an upstream proxy
 
 Affect inference can be culturally contingent and can expose sensitive behavioral information. The present experiments use existing research datasets and do not justify covert emotion surveillance, clinical diagnosis, or high-stakes decisions. A deployed agent should disclose affect sensing, obtain appropriate consent, minimize retained media, and offer a non-affective fallback. \textsc{wait} should not be interpreted as evidence that a user has no emotion, and a committed state should remain an uncertain model output rather than a fact about the person.
 
-Every formal experiment stores a dedicated parameter snapshot, code and artifact hashes, row-level decisions, aggregate results, and an independent validation report. The primary CH-SIMS v2 test, external evaluation, competitive diagnostic, reporting audit, source-group correction, nonlinear robustness study, and agent replay use run identifiers listed in Appendix~\ref{app:runs}. The processed CH-SIMS v2 container has SHA-256 \texttt{c5327d86ff152139\allowbreak{}5935d7b2929a3d3a\allowbreak{}56a9770a32edeb1f\allowbreak{}eb16eac89177f8c5}. Public release still requires the authors to provide a repository URL, public timestamp, and immutable revision while respecting dataset licenses. The local records document that H0 and the error endpoint were fixed before sealed-test evaluation, but they do not provide an independently verifiable public timestamp.
+Every formal experiment stores a dedicated parameter snapshot, code and artifact hashes, row-level decisions, aggregate results, and an independent validation report. The primary CH-SIMS v2 test, external evaluation, competitive diagnostic, reporting audit, source-group correction, nonlinear robustness study, and agent replay use run identifiers listed in Appendix~\ref{app:runs}. The processed CH-SIMS v2 container has SHA-256 \texttt{c5327d86ff152139\allowbreak{}5935d7b2929a3d3a\allowbreak{}56a9770a32edeb1f\allowbreak{}eb16eac89177f8c5}. Code and compact evidence artifacts are available at \url{https://github.com/Sun668/AMAC} under release tag \texttt{1.0.0}. The listed run identifiers resolve to local immutable result and snapshot directories in that release; restricted datasets are not redistributed. The archived local protocol predates sealed-test evaluation, but the release tag is an artifact marker rather than a third-party preregistration timestamp.
 
 \section{Conclusion}
 
@@ -367,7 +369,7 @@ Table~\ref{tab:stage-specific} reports stage-specific denominators for the selec
 
 \section{Agent Contract Interface}
 
-The stateful tool exposes three operations. \texttt{start} creates a session and freezes $\tau$ and $\delta$. \texttt{observe} accepts the newly arrived modality, provisional state, and externally estimated correctness probability. \texttt{reset} deletes the session. Successful calls return a numeric code, a Chinese message, and a structured decision. Invalid inputs return Chinese errors and do not silently enter the state. The replay evaluates the actual Go implementation rather than a separate simulator.
+The stateful tool exposes three operations. \texttt{start} creates a session and freezes $\tau$ and $\delta$. \texttt{observe} accepts the newly arrived modality, provisional state, and externally estimated correctness probability, and returns \textsc{wait}, \textsc{commit}, \textsc{hold}, or \textsc{revise}. \textsc{hold} means that an existing committed state remains exposed when no revision occurs, including an unchanged terminal state. \texttt{reset} deletes the session. Successful calls return a numeric code, a Chinese message, and a structured decision. JSON field names and action codes are English; success and validation messages are Chinese because the released tool targets a Chinese-language agent, and deployments may localize those messages without changing contract semantics. Invalid inputs do not silently enter the state. The replay evaluates the actual Go implementation rather than a separate simulator.
 
 
 \begingroup
