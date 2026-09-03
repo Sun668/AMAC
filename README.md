@@ -2,6 +2,9 @@
 
 Official research artifacts for **AMAC: Risk-Aware Commitment under Asynchronous Modality Arrival for Multimodal Affective Agents**.
 
+Repository: <https://github.com/Sun668/AMAC>  
+Manuscript code snapshot: [`9703a7c857ce9a6c37fd0056addfdedb3a139e6a`](https://github.com/Sun668/AMAC/commit/9703a7c857ce9a6c37fd0056addfdedb3a139e6a)
+
 AMAC separates terminal multimodal recognition from the decision to expose an intermediate affect state. Given modalities arriving in an arbitrary order, the stateful contract emits `WAIT`, `COMMIT`, or `REVISE`, while forcing the terminal state to equal the complete text-audio-vision prediction.
 
 ## Repository contents
