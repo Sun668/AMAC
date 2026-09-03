@@ -1,0 +1,184 @@
+{
+  "schema": "research-experiment-parameters-v1",
+  "status": "frozen",
+  "experiment": "amac_p0_robustness",
+  "hypothesis": {
+    "primary": "Report whether the sealed H0-versus-B4 direction remains observable on mechanically defined source-disjoint test clips.",
+    "diagnostic": "Compare tested risk estimators over a common committed-state coverage interval."
+  },
+  "dataset": {
+    "name": "CH-SIMS v2 official processed unaligned features",
+    "source_group_rule": "ID prefix before $_$",
+    "source_disjoint_rule": "official test source group absent from official train"
+  },
+  "sampling": {
+    "seeds": [
+      1,
+      12,
+      123,
+      1234,
+      12345
+    ],
+    "arrival_orders": [
+      "TAV",
+      "TVA",
+      "ATV",
+      "AVT",
+      "VTA",
+      "VAT"
+    ],
+    "paired_unit": "original clip with all six paths"
+  },
+  "preprocessing": {
+    "state_boundaries": [
+      -0.1,
+      0.1
+    ],
+    "source_group_separator": "$_$"
+  },
+  "models": {
+    "retraining": false,
+    "conditions": [
+      "B0",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "H0",
+      "O1",
+      "LR",
+      "PLATT",
+      "ISO"
+    ]
+  },
+  "prompts": {
+    "used": false
+  },
+  "policy": {
+    "threshold_grid_start": 0.0,
+    "threshold_grid_stop": 1.0,
+    "threshold_grid_step": 0.01,
+    "aurc_coverage_lower": 0.75,
+    "aurc_coverage_upper": 1.0,
+    "frontier_conditions": [
+      "B2",
+      "B4",
+      "H0",
+      "LR",
+      "PLATT",
+      "ISO"
+    ]
+  },
+  "actions": {
+    "allowed": [
+      "read frozen artifacts",
+      "write isolated outputs"
+    ]
+  },
+  "costs": {
+    "external_api_usd": 0.0
+  },
+  "training": {
+    "performed": false
+  },
+  "retrieval": {
+    "used": false
+  },
+  "generation": {
+    "used": false
+  },
+  "evaluation": {
+    "scopes": [
+      "official_test",
+      "source_disjoint_test"
+    ],
+    "revision_denominator": "opportunities after first commitment"
+  },
+  "statistics": {
+    "bootstrap_repetitions": 5000,
+    "confidence_level": 0.95,
+    "bootstrap_seed": 20260903,
+    "source_disjoint_is_supplementary": true,
+    "risk_coverage_is_descriptive": true
+  },
+  "randomness": {
+    "bootstrap_only": true
+  },
+  "caches": {
+    "new_cache": false
+  },
+  "environment": {
+    "python": "3.9+",
+    "device": "cpu",
+    "external_network": false,
+    "runner_path": "experiments/exp_2026_09_03_amac_p0_robustness/scripts/run_analysis.py",
+    "runner_sha256": "55e2ae3b97e4b3c0d80c48ef67e4f417d4b62ad8483eeb6bdcc2374253b7a046",
+    "validator_path": "experiments/exp_2026_09_03_amac_p0_robustness/scripts/validate_analysis.py",
+    "validator_sha256": "d101d97c1d7ad0ee3186bf308ba985501740e44603835a55294acc7adcaca736",
+    "paper_renderer_path": "experiments/exp_2026_09_03_amac_p0_robustness/scripts/render_paper_tables.py",
+    "paper_renderer_sha256": "9faf93ae4d302136ddeea76e3c04932f7573dd0e616ca8b8241ed5886d2a6942"
+  },
+  "resources": {
+    "wall_time_limit_minutes": 30
+  },
+  "cost_limits": {
+    "external_api_usd_hard_ceiling": 0.0
+  },
+  "gates": {
+    "validity": [
+      "zero exact sample overlap",
+      "test-only source groups absent from train",
+      "terminal identity one",
+      "independent validator accepted"
+    ],
+    "performance": "No favorable result is required; report direction and uncertainty as observed."
+  },
+  "artifacts": {
+    "primary_predictions": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/predictions.npz",
+      "sha256": "fb0a0809449f08ff0e9caac9f25e510b8971dbb8859f7cab559cabe12862146e"
+    },
+    "primary_rows": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/per_path.csv",
+      "sha256": "31594224a7654b57b482dcf19b9f2ecd639e9c9782ca6365c1bd5c09f24bfd7a"
+    },
+    "primary_metrics": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/metrics.json",
+      "sha256": "4c59ab86f664f86e9234d698d7dcb07ba4a6c222c913d0b5a46bb0fb837135ac"
+    },
+    "primary_snapshot": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/snapshots/chsimsv2_test_v1_recovery/parameters.json",
+      "sha256": "a57fb7e90c799d9f5c25c2fe60f0991135f5a163d2db6817b26c69af70c8fecc"
+    },
+    "primary_validator": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/validator.json",
+      "sha256": "dace5463176ed85946372db13e2fce2a5a4aa5ad9f146c4f166d886b388bba25"
+    },
+    "competitive_rows": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/results/competitive_baselines_v1/per_path.csv",
+      "sha256": "c57dd32d21a9fc775af585f804451d00074506ade30190a5b14fb5fdc1126fe0"
+    },
+    "competitive_scores": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/results/competitive_baselines_v1/scores.npz",
+      "sha256": "2db17d10872637ec77fbff4660f739ffa4746f22b38d2bfc014e2139dff1c01b"
+    },
+    "competitive_metrics": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/results/competitive_baselines_v1/metrics.json",
+      "sha256": "8fac400ecf260ca0eca5fbb19a76bd8150a8a7fe65a070fb62d1dda68cca54f0"
+    },
+    "competitive_snapshot": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/snapshots/competitive_baselines_v1/parameters.json",
+      "sha256": "a39751a0ca40b597f6d5c9520d3ea93d713d3177d478f238ceb20c0aa12efcb1"
+    },
+    "competitive_validator": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/results/competitive_baselines_v1/validator.json",
+      "sha256": "efc4c0cf34706e0e83f6cd71ac862206711203ff2c79a33093e7a35fc8411a66"
+    },
+    "development_runner": {
+      "path": "experiments/exp_2026_09_03_amac_train_validation/scripts/run_development.py",
+      "sha256": "0d79396d851ac626d0fd892538b56d35cd28af49c7563c455c48f9be258219bd"
+    }
+  },
+  "run_id": "p0_robustness_v2",
+  "frozen_at": "2026-09-03T05:14:35.464469+00:00"
+}

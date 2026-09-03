@@ -1,0 +1,25 @@
+{
+  "selected_estimator": "LR",
+  "architecture_claim_allowed": false,
+  "feature_information_beyond_scalar_calibration_supported": true,
+  "paper_gate_passed": true,
+  "checks": {
+    "all_new_conditions_coverage": true,
+    "final_identity": true,
+    "lr_noninferior_to_h0_each_seed": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "lr_utility_beats_both_scalar_calibrators_each_seed": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "lr_scalar_win_count": 5
+  }
+}

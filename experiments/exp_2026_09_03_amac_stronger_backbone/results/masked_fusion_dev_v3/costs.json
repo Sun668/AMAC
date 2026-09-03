@@ -1,0 +1,9 @@
+{
+  "schema": "amac-masked-fusion-development-costs-v1",
+  "status": "completed",
+  "run_id": "masked_fusion_dev_v3",
+  "parameter_snapshot_sha256": "301f9c2c0d74e94700a8623d8da7979e11b01dbce1bba5edae473736b5316275",
+  "protocol_version": "2026-09-03-amac-masked-fusion-dev-v1",
+  "external_api_usd": 0.0,
+  "wall_seconds": 67.54202604293823
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "affect-contract-agent-replay-validator-v1",
+  "status": "passed",
+  "run_id": "affect_contract_replay_v1",
+  "parameter_snapshot_sha256": "2b096286c3494e04c7f53a9e0aa4e6be09fa2ed561d085a074ef636dc243b1d4",
+  "checks": {
+    "artifact_hashes": true,
+    "input_trajectory_recomputed": true,
+    "online_offline_identity": true,
+    "final_identity": true,
+    "robustness": true,
+    "latency_present": true
+  },
+  "errors": []
+}

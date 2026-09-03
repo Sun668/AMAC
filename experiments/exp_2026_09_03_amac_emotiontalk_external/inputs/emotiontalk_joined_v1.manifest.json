@@ -1,0 +1,45 @@
+{
+  "schema": "emotiontalk-metadata-index-v1",
+  "status": "completed",
+  "source_root": "/Users/sun/Documents/git/go-tiny-claw/.worktree/emotional-agent-evals/data/external/EmotionTalk/metadata",
+  "source_json_count": 77000,
+  "source_manifest_sha256": "ede4340d0ec5dbf638d4d8d775f110f3e505fbac31ac81908c43d9b15e5ffa14",
+  "joined_rows": 19250,
+  "groups": [
+    "G00001",
+    "G00002",
+    "G00003",
+    "G00004",
+    "G00005",
+    "G00006",
+    "G00007",
+    "G00008",
+    "G00009",
+    "G00010",
+    "G00011",
+    "G00012",
+    "G00013",
+    "G00014",
+    "G00015"
+  ],
+  "classes": [
+    "angry",
+    "disgusted",
+    "fearful",
+    "happy",
+    "neutral",
+    "sad",
+    "surprised"
+  ],
+  "gold_distribution": {
+    "neutral": 6853,
+    "angry": 3698,
+    "sad": 1153,
+    "happy": 3592,
+    "disgusted": 1371,
+    "surprised": 1661,
+    "fearful": 922
+  },
+  "index_sha256": "c2b8a7d2df632b343686ea904b4d14e57324822ff5f7a53646b88cf841ec137c",
+  "contains_raw_content": false
+}

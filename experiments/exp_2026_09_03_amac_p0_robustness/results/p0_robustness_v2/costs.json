@@ -1,0 +1,7 @@
+{
+  "schema": "amac-p0-robustness-costs-v1",
+  "status": "completed",
+  "run_id": "p0_robustness_v2",
+  "external_api_usd": 0.0,
+  "wall_seconds": 73.65903997421265
+}

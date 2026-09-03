@@ -1,0 +1,14 @@
+{
+  "schema": "amac-competitive-baselines-validator-v1",
+  "status": "passed",
+  "run_id": "competitive_baselines_v1",
+  "parameter_snapshot_sha256": "a39751a0ca40b597f6d5c9520d3ea93d713d3177d478f238ceb20c0aa12efcb1",
+  "checks": {
+    "artifact_hashes": true,
+    "row_identity": true,
+    "metric_recomputation": true,
+    "decision_recomputation": true,
+    "test_isolation_declared": true
+  },
+  "errors": []
+}

@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "decision": {
+    "selected_estimator": "LR",
+    "architecture_claim_allowed": false,
+    "feature_information_beyond_scalar_calibration_supported": true,
+    "paper_gate_passed": true,
+    "checks": {
+      "all_new_conditions_coverage": true,
+      "final_identity": true,
+      "lr_noninferior_to_h0_each_seed": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "lr_utility_beats_both_scalar_calibrators_each_seed": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "lr_scalar_win_count": 5
+    }
+  },
+  "summary": {
+    "H0": {
+      "prefinal_committed_error_rate": {
+        "mean": 0.3276669550237698,
+        "std": 0.0032283563998247444
+      },
+      "committed_revision_rate": {
+        "mean": 0.26808510638297867,
+        "std": 0.005242150232376487
+      },
+      "premature_exposure_rate": {
+        "mean": 0.10319148936170212,
+        "std": 0.0006970260577188823
+      },
+      "stage_two_coverage": {
+        "mean": 0.9091553836234688,
+        "std": 0.0024274468854953812
+      },
+      "time_to_first_commit": {
+        "mean": 1.3388136686009027,
+        "std": 0.005360505850520916
+      }
+    },
+    "B2": {
+      "prefinal_committed_error_rate": {
+        "mean": 0.435033979105386,
+        "std": 6.206335383118183e-17
+      },
+      "committed_revision_rate": {
+        "mean": 0.41166989039329466,
+        "std": 0.0
+      },
+      "premature_exposure_rate": {
+        "mean": 0.20712443584784007,
+        "std": 3.1031676915590914e-17
+      },
+      "stage_two_coverage": {
+        "mean": 0.9105415860735009,
+        "std": 1.2412670766236366e-16
+      },
+      "time_to_first_commit": {
+        "mean": 1.4108639587362992,
+        "std": 0.0
+      }
+    },
+    "B4": {
+      "prefinal_committed_error_rate": {
+        "mean": 0.44903134192108735,
+        "std": 0.0
+      },
+      "committed_revision_rate": {
+        "mean": 0.38475177304964536,
+        "std": 0.0
+      },
+      "premature_exposure_rate": {
+        "mean": 0.20357833655705995,
+        "std": 0.0
+      },
+      "stage_two_coverage": {
+        "mean": 0.9105415860735009,
+        "std": 1.2412670766236366e-16
+      },
+      "time_to_first_commit": {
+        "mean": 1.4108639587362992,
+        "std": 0.0
+      }
+    },
+    "LR": {
+      "prefinal_committed_error_rate": {
+        "mean": 0.3257751937984496,
+        "std": 0.0
+      },
+      "committed_revision_rate": {
+        "mean": 0.2775628626692456,
+        "std": 0.0
+      },
+      "premature_exposure_rate": {
+        "mean": 0.10622179239200516,
+        "std": 0.0
+      },
+      "stage_two_coverage": {
+        "mean": 0.9197292069632497,
+        "std": 1.2412670766236366e-16
+      },
+      "time_to_first_commit": {
+        "mean": 1.3365570599613152,
+        "std": 0.0
+      }
+    },
+    "PLATT": {
+      "prefinal_committed_error_rate": {
+        "mean": 0.4671985815602837,
+        "std": 0.0
+      },
+      "committed_revision_rate": {
+        "mean": 0.4771115409413282,
+        "std": 0.0
+      },
+      "premature_exposure_rate": {
+        "mean": 0.24532559638942616,
+        "std": 0.0
+      },
+      "stage_two_coverage": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "time_to_first_commit": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "ISO": {
+      "prefinal_committed_error_rate": {
+        "mean": 0.46970340783547215,
+        "std": 6.206335383118183e-17
+      },
+      "committed_revision_rate": {
+        "mean": 0.42037395228884583,
+        "std": 6.206335383118183e-17
+      },
+      "premature_exposure_rate": {
+        "mean": 0.22888459058671823,
+        "std": 3.1031676915590914e-17
+      },
+      "stage_two_coverage": {
+        "mean": 0.9921018697614443,
+        "std": 1.2412670766236366e-16
+      },
+      "time_to_first_commit": {
+        "mean": 1.1033204384268214,
+        "std": 0.0
+      }
+    }
+  },
+  "validator": {
+    "artifact_hashes": true,
+    "row_identity": true,
+    "metric_recomputation": true,
+    "decision_recomputation": true,
+    "test_isolation_declared": true
+  }
+}

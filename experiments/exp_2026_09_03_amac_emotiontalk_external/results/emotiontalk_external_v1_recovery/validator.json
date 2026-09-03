@@ -1,0 +1,8 @@
+{
+  "schema": "amac-emotiontalk-validator-v1",
+  "status": "passed",
+  "run_id": "emotiontalk_external_v1_recovery",
+  "parameter_snapshot_sha256": "c8d68ac037f3fe9e77861d1be2de8d5d95c46ba88ed39207ddef757a8e4073b2",
+  "protocol_version": "2026-09-03-amac-emotiontalk-v1",
+  "errors": []
+}

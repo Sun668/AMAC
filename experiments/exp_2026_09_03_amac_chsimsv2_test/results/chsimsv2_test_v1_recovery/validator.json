@@ -1,0 +1,15 @@
+{
+  "schema": "amac-chsimsv2-test-validator-v1",
+  "status": "passed",
+  "run_id": "chsimsv2_test_v1_recovery",
+  "parameter_snapshot_sha256": "a57fb7e90c799d9f5c25c2fe60f0991135f5a163d2db6817b26c69af70c8fecc",
+  "protocol_version": "2026-09-03-amac-chsimsv2-test-v1",
+  "checks": {
+    "hashes": true,
+    "rows": true,
+    "metrics": true,
+    "official_anchor": true,
+    "decision": true
+  },
+  "errors": []
+}

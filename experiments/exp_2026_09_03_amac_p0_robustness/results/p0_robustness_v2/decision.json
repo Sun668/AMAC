@@ -1,0 +1,18 @@
+{
+  "schema": "amac-p0-robustness-decision-v1",
+  "status": "completed_unvalidated",
+  "run_id": "p0_robustness_v2",
+  "parameter_snapshot_sha256": "ac5d9e019036cdd292d27c9a1ac07042f3bfec22c706acfd1caa97396a39ae15",
+  "validity_checks": {
+    "exact_sample_overlap_zero": true,
+    "source_disjoint_subset_nonempty": true,
+    "source_disjoint_groups_absent_from_train": true,
+    "all_terminal_identities_one": true,
+    "all_conditions_reported": true,
+    "all_frontiers_complete": true
+  },
+  "valid_analysis": true,
+  "source_disjoint_error_direction": "favorable_all_seeds",
+  "source_disjoint_error_ci_excludes_zero_all_seeds": true,
+  "claim_boundary": "Supplementary source-disjoint and descriptive risk-coverage evidence; no confirmatory or non-inferiority claim."
+}

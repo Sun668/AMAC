@@ -1,0 +1,29 @@
+{
+  "schema": "amac-source-split-audit-v1",
+  "train_samples": 2722,
+  "test_samples": 1034,
+  "exact_sample_overlap": 0,
+  "train_source_groups": 129,
+  "test_source_groups": 142,
+  "overlapping_source_groups": 127,
+  "source_disjoint_test_groups": 15,
+  "source_disjoint_test_clips": 190,
+  "source_disjoint_test_fraction": 0.18375241779497098,
+  "source_disjoint_group_ids": [
+    "test1",
+    "test10",
+    "test11",
+    "test12",
+    "test13",
+    "test14",
+    "test15",
+    "test2",
+    "test3",
+    "test4",
+    "test5",
+    "test6",
+    "test7",
+    "test8",
+    "test9"
+  ]
+}

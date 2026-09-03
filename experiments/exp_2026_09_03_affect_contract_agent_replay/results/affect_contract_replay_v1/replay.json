@@ -1,0 +1,30 @@
+{
+  "code": 0,
+  "elapsed_seconds": 0.129344083,
+  "final_identity": true,
+  "input_sha256": "2cc1977b73923878f2dd1c9e011cdfaeade229b7f656a3086ac1a0387c017e7b",
+  "latency_microseconds": {
+    "max": 161.083,
+    "p50": 3.416,
+    "p95": 7.292,
+    "p99": 10.708
+  },
+  "latency_scope": "当前机器进程内工具调用描述值，不代表网络或端到端延迟",
+  "message": "Agent 情感契约回放完成",
+  "mismatch_examples": [],
+  "observations": 18612,
+  "paths": 6204,
+  "robustness_all_passed": true,
+  "robustness_checks": {
+    "duplicate_modality_rejected": true,
+    "invalid_modality_rejected": true,
+    "invalid_probability_rejected": true,
+    "invalid_threshold_rejected": true,
+    "observe_before_start_rejected": true,
+    "reset_removes_session": true,
+    "third_modality_forces_final_revision": true,
+    "valid_start_and_observe": true
+  },
+  "schema": "affect-contract-agent-replay-v1",
+  "trajectory_mismatch_count": 0
+}

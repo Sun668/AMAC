@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "paths": 6204,
+  "observations": 18612,
+  "trajectory_mismatch_count": 0,
+  "final_identity": true,
+  "robustness_checks": {
+    "duplicate_modality_rejected": true,
+    "invalid_modality_rejected": true,
+    "invalid_probability_rejected": true,
+    "invalid_threshold_rejected": true,
+    "observe_before_start_rejected": true,
+    "reset_removes_session": true,
+    "third_modality_forces_final_revision": true,
+    "valid_start_and_observe": true
+  },
+  "latency_microseconds": {
+    "max": 161.083,
+    "p50": 3.416,
+    "p95": 7.292,
+    "p99": 10.708
+  },
+  "validator": {
+    "artifact_hashes": true,
+    "input_trajectory_recomputed": true,
+    "online_offline_identity": true,
+    "final_identity": true,
+    "robustness": true,
+    "latency_present": true
+  }
+}

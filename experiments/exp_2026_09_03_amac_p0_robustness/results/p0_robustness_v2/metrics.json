@@ -1,0 +1,2774 @@
+{
+  "schema": "amac-p0-robustness-metrics-v1",
+  "status": "completed",
+  "run_id": "p0_robustness_v2",
+  "parameter_snapshot_sha256": "ac5d9e019036cdd292d27c9a1ac07042f3bfec22c706acfd1caa97396a39ae15",
+  "analysis_status": "post_hoc_supplementary",
+  "source_split_audit": {
+    "schema": "amac-source-split-audit-v1",
+    "train_samples": 2722,
+    "test_samples": 1034,
+    "exact_sample_overlap": 0,
+    "train_source_groups": 129,
+    "test_source_groups": 142,
+    "overlapping_source_groups": 127,
+    "source_disjoint_test_groups": 15,
+    "source_disjoint_test_clips": 190,
+    "source_disjoint_test_fraction": 0.18375241779497098,
+    "source_disjoint_group_ids": [
+      "test1",
+      "test10",
+      "test11",
+      "test12",
+      "test13",
+      "test14",
+      "test15",
+      "test2",
+      "test3",
+      "test4",
+      "test5",
+      "test6",
+      "test7",
+      "test8",
+      "test9"
+    ]
+  },
+  "official_test": {
+    "B0": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 12408,
+          "prefinal_errors": 5400,
+          "prefinal_committed_error_rate": 0.43520309477756286,
+          "committed_state_coverage": 1.0,
+          "committed_revision_rate_per_path": 0.630722114764668,
+          "revision_opportunities": 12408,
+          "revision_rate_per_opportunity": 0.315361057382334,
+          "premature_exposure_rate": 0.26998710509348806,
+          "stage_two_path_coverage": 1.0,
+          "time_to_first_commit": 1.0,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 6204,
+          "stage1_coverage": 1.0,
+          "stage1_errors": 2960,
+          "stage1_committed_error_rate": 0.4771115409413282,
+          "stage2_committed_count": 6204,
+          "stage2_coverage": 1.0,
+          "stage2_errors": 2440,
+          "stage2_committed_error_rate": 0.39329464861379754
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 12408.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 5400.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.43520309477756286,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.630722114764668,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 12408.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.315361057382334,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.26998710509348806,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.0,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 2960.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.4771115409413282,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 2440.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.39329464861379754,
+          "std": null
+        }
+      }
+    },
+    "B1": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 0,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": null,
+          "committed_state_coverage": 0.0,
+          "committed_revision_rate_per_path": 0.0,
+          "revision_opportunities": 0,
+          "revision_rate_per_opportunity": null,
+          "premature_exposure_rate": 0.0,
+          "stage_two_path_coverage": 0.0,
+          "time_to_first_commit": 3.0,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 0,
+          "stage1_coverage": 0.0,
+          "stage1_errors": 0,
+          "stage1_committed_error_rate": null,
+          "stage2_committed_count": 0,
+          "stage2_coverage": 0.0,
+          "stage2_errors": 0,
+          "stage2_committed_error_rate": null
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 0.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": null,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.0,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 0.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": null,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 3.0,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": null,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": null,
+          "std": null
+        }
+      }
+    },
+    "B2": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 9859,
+          "prefinal_errors": 4289,
+          "prefinal_committed_error_rate": 0.43503397910538594,
+          "committed_state_coverage": 0.7945680206318504,
+          "committed_revision_rate_per_path": 0.41166989039329466,
+          "revision_opportunities": 9859,
+          "revision_rate_per_opportunity": 0.2590526422558069,
+          "premature_exposure_rate": 0.2071244358478401,
+          "stage_two_path_coverage": 0.910541586073501,
+          "time_to_first_commit": 1.4108639587362992,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 4210,
+          "stage1_coverage": 0.6785944551901999,
+          "stage1_errors": 2004,
+          "stage1_committed_error_rate": 0.47600950118764845,
+          "stage2_committed_count": 5649,
+          "stage2_coverage": 0.910541586073501,
+          "stage2_errors": 2285,
+          "stage2_committed_error_rate": 0.40449637103912195
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 9859.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 4289.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.43503397910538594,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.7945680206318504,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.41166989039329466,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 9859.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.2590526422558069,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.2071244358478401,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.910541586073501,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.4108639587362992,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 4210.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.6785944551901999,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 2004.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.47600950118764845,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 5649.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.910541586073501,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 2285.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.40449637103912195,
+          "std": null
+        }
+      }
+    },
+    "B3": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 3971,
+          "prefinal_errors": 1309,
+          "prefinal_committed_error_rate": 0.3296398891966759,
+          "committed_state_coverage": 0.3200354609929078,
+          "committed_revision_rate_per_path": 0.14281108961960026,
+          "revision_opportunities": 3971,
+          "revision_rate_per_opportunity": 0.22311760261898766,
+          "premature_exposure_rate": 0.06254029658284978,
+          "stage_two_path_coverage": 0.6400709219858156,
+          "time_to_first_commit": 2.3599290780141846,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 0,
+          "stage1_coverage": 0.0,
+          "stage1_errors": 0,
+          "stage1_committed_error_rate": null,
+          "stage2_committed_count": 3971,
+          "stage2_coverage": 0.6400709219858156,
+          "stage2_errors": 1309,
+          "stage2_committed_error_rate": 0.3296398891966759
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 3971.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 1309.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.3296398891966759,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.3200354609929078,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.14281108961960026,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 3971.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.22311760261898766,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.06254029658284978,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.6400709219858156,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 2.3599290780141846,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": null,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 3971.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.6400709219858156,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 1309.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.3296398891966759,
+          "std": null
+        }
+      }
+    },
+    "B4": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 9859,
+          "prefinal_errors": 4427,
+          "prefinal_committed_error_rate": 0.44903134192108735,
+          "committed_state_coverage": 0.7945680206318504,
+          "committed_revision_rate_per_path": 0.38475177304964536,
+          "revision_opportunities": 9859,
+          "revision_rate_per_opportunity": 0.24211380464550158,
+          "premature_exposure_rate": 0.20357833655705995,
+          "stage_two_path_coverage": 0.910541586073501,
+          "time_to_first_commit": 1.4108639587362992,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 4210,
+          "stage1_coverage": 0.6785944551901999,
+          "stage1_errors": 2004,
+          "stage1_committed_error_rate": 0.47600950118764845,
+          "stage2_committed_count": 5649,
+          "stage2_coverage": 0.910541586073501,
+          "stage2_errors": 2423,
+          "stage2_committed_error_rate": 0.428925473535139
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 9859.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 4427.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.44903134192108735,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.7945680206318504,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.38475177304964536,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 9859.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.24211380464550158,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.20357833655705995,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.910541586073501,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.4108639587362992,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 4210.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.6785944551901999,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 2004.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.47600950118764845,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 5649.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.910541586073501,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 2423.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.428925473535139,
+          "std": null
+        }
+      }
+    },
+    "H0": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 10248,
+          "prefinal_errors": 3323,
+          "prefinal_committed_error_rate": 0.3242583918813427,
+          "committed_state_coverage": 0.8259187620889749,
+          "committed_revision_rate_per_path": 0.2735332043842682,
+          "revision_opportunities": 10248,
+          "revision_rate_per_opportunity": 0.16559328649492583,
+          "premature_exposure_rate": 0.1036428110896196,
+          "stage_two_path_coverage": 0.905544809800129,
+          "time_to_first_commit": 1.3481624758220503,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 4630,
+          "stage1_coverage": 0.7462927143778207,
+          "stage1_errors": 1574,
+          "stage1_committed_error_rate": 0.33995680345572354,
+          "stage2_committed_count": 5618,
+          "stage2_coverage": 0.905544809800129,
+          "stage2_errors": 1749,
+          "stage2_committed_error_rate": 0.3113207547169811
+        },
+        "12": {
+          "paths": 6204,
+          "prefinal_commits": 10332,
+          "prefinal_errors": 3430,
+          "prefinal_committed_error_rate": 0.3319783197831978,
+          "committed_state_coverage": 0.8326885880077369,
+          "committed_revision_rate_per_path": 0.26305609284332687,
+          "revision_opportunities": 10332,
+          "revision_rate_per_opportunity": 0.15795586527293845,
+          "premature_exposure_rate": 0.10283687943262411,
+          "stage_two_path_coverage": 0.9107027724049,
+          "time_to_first_commit": 1.3346228239845261,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 4682,
+          "stage1_coverage": 0.7546744036105738,
+          "stage1_errors": 1598,
+          "stage1_committed_error_rate": 0.3413071337035455,
+          "stage2_committed_count": 5650,
+          "stage2_coverage": 0.9107027724049,
+          "stage2_errors": 1832,
+          "stage2_committed_error_rate": 0.32424778761061945
+        },
+        "123": {
+          "paths": 6204,
+          "prefinal_commits": 10314,
+          "prefinal_errors": 3359,
+          "prefinal_committed_error_rate": 0.32567384138064764,
+          "committed_state_coverage": 0.8312379110251451,
+          "committed_revision_rate_per_path": 0.27321083172147004,
+          "revision_opportunities": 10314,
+          "revision_rate_per_opportunity": 0.16433973240255964,
+          "premature_exposure_rate": 0.1041263700838169,
+          "stage_two_path_coverage": 0.9113475177304965,
+          "time_to_first_commit": 1.3375241779497098,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 4660,
+          "stage1_coverage": 0.7511283043197937,
+          "stage1_errors": 1586,
+          "stage1_committed_error_rate": 0.340343347639485,
+          "stage2_committed_count": 5654,
+          "stage2_coverage": 0.9113475177304965,
+          "stage2_errors": 1773,
+          "stage2_committed_error_rate": 0.3135833038556774
+        },
+        "1234": {
+          "paths": 6204,
+          "prefinal_commits": 10322,
+          "prefinal_errors": 3407,
+          "prefinal_committed_error_rate": 0.3300716915326487,
+          "committed_state_coverage": 0.8318826563507414,
+          "committed_revision_rate_per_path": 0.2627337201805287,
+          "revision_opportunities": 10322,
+          "revision_rate_per_opportunity": 0.15791513272621585,
+          "premature_exposure_rate": 0.10235332043842682,
+          "stage_two_path_coverage": 0.9103803997421018,
+          "time_to_first_commit": 1.3362346872985171,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 4674,
+          "stage1_coverage": 0.753384912959381,
+          "stage1_errors": 1592,
+          "stage1_committed_error_rate": 0.3406076166024818,
+          "stage2_committed_count": 5648,
+          "stage2_coverage": 0.9103803997421018,
+          "stage2_errors": 1815,
+          "stage2_committed_error_rate": 0.3213526912181303
+        },
+        "12345": {
+          "paths": 6204,
+          "prefinal_commits": 10314,
+          "prefinal_errors": 3366,
+          "prefinal_committed_error_rate": 0.3263525305410122,
+          "committed_state_coverage": 0.8312379110251451,
+          "committed_revision_rate_per_path": 0.2678916827852998,
+          "revision_opportunities": 10314,
+          "revision_rate_per_opportunity": 0.16114019778941244,
+          "premature_exposure_rate": 0.1029980657640232,
+          "stage_two_path_coverage": 0.9078014184397163,
+          "time_to_first_commit": 1.3375241779497098,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 4682,
+          "stage1_coverage": 0.7546744036105738,
+          "stage1_errors": 1598,
+          "stage1_committed_error_rate": 0.3413071337035455,
+          "stage2_committed_count": 5632,
+          "stage2_coverage": 0.9078014184397163,
+          "stage2_errors": 1768,
+          "stage2_committed_error_rate": 0.31392045454545453
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": 0.0
+        },
+        "prefinal_commits": {
+          "mean": 10306.0,
+          "std": 33.25657829663178
+        },
+        "prefinal_errors": {
+          "mean": 3377.0,
+          "std": 42.04164601915581
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.3276669550237698,
+          "std": 0.0032283563998247444
+        },
+        "committed_state_coverage": {
+          "mean": 0.8305931656995487,
+          "std": 0.002680252925260458
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.26808510638297867,
+          "std": 0.005242150232376487
+        },
+        "revision_opportunities": {
+          "mean": 10306.0,
+          "std": 33.25657829663178
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.16138884293721042,
+          "std": 0.0035460864678404716
+        },
+        "premature_exposure_rate": {
+          "mean": 0.10319148936170212,
+          "std": 0.0006970260577188823
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.9091553836234688,
+          "std": 0.0024274468854953812
+        },
+        "time_to_first_commit": {
+          "mean": 1.3388136686009027,
+          "std": 0.005360505850520916
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "stage1_committed_count": {
+          "mean": 4665.6,
+          "std": 21.835750502329887
+        },
+        "stage1_coverage": {
+          "mean": 0.7520309477756286,
+          "std": 0.0035196245168165508
+        },
+        "stage1_errors": {
+          "mean": 1589.6,
+          "std": 10.039920318408907
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.3407044070209563,
+          "std": 0.0005969091766373624
+        },
+        "stage2_committed_count": {
+          "mean": 5640.4,
+          "std": 15.05988047761336
+        },
+        "stage2_coverage": {
+          "mean": 0.9091553836234688,
+          "std": 0.0024274468854953812
+        },
+        "stage2_errors": {
+          "mean": 1787.4,
+          "std": 34.67419789987939
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.31688499838937256,
+          "std": 0.0055861762183701275
+        }
+      }
+    },
+    "O1": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 7590,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": 0.0,
+          "committed_state_coverage": 0.6117021276595744,
+          "committed_revision_rate_per_path": 0.14329464861379754,
+          "revision_opportunities": 7590,
+          "revision_rate_per_opportunity": 0.11712779973649538,
+          "premature_exposure_rate": 0.0,
+          "stage_two_path_coverage": 0.7005157962604771,
+          "time_to_first_commit": 1.7765957446808511,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 3244,
+          "stage1_coverage": 0.5228884590586719,
+          "stage1_errors": 0,
+          "stage1_committed_error_rate": 0.0,
+          "stage2_committed_count": 4346,
+          "stage2_coverage": 0.7005157962604771,
+          "stage2_errors": 0,
+          "stage2_committed_error_rate": 0.0
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 7590.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.0,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.6117021276595744,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.14329464861379754,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 7590.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.11712779973649538,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.7005157962604771,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.7765957446808511,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 3244.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.5228884590586719,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 4346.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.7005157962604771,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.0,
+          "std": null
+        }
+      }
+    },
+    "LR": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 10320,
+          "prefinal_errors": 3362,
+          "prefinal_committed_error_rate": 0.3257751937984496,
+          "committed_state_coverage": 0.8317214700193424,
+          "committed_revision_rate_per_path": 0.2775628626692456,
+          "revision_opportunities": 10320,
+          "revision_rate_per_opportunity": 0.16686046511627908,
+          "premature_exposure_rate": 0.10622179239200516,
+          "stage_two_path_coverage": 0.9197292069632496,
+          "time_to_first_commit": 1.3365570599613152,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 4614,
+          "stage1_coverage": 0.7437137330754352,
+          "stage1_errors": 1572,
+          "stage1_committed_error_rate": 0.34070221066319895,
+          "stage2_committed_count": 5706,
+          "stage2_coverage": 0.9197292069632496,
+          "stage2_errors": 1790,
+          "stage2_committed_error_rate": 0.3137048720644935
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 10320.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 3362.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.3257751937984496,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.8317214700193424,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.2775628626692456,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 10320.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.16686046511627908,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.10622179239200516,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.9197292069632496,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.3365570599613152,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 4614.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.7437137330754352,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 1572.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.34070221066319895,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 5706.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.9197292069632496,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 1790.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.3137048720644935,
+          "std": null
+        }
+      }
+    },
+    "PLATT": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 12408,
+          "prefinal_errors": 5797,
+          "prefinal_committed_error_rate": 0.4671985815602837,
+          "committed_state_coverage": 1.0,
+          "committed_revision_rate_per_path": 0.4771115409413282,
+          "revision_opportunities": 12408,
+          "revision_rate_per_opportunity": 0.2385557704706641,
+          "premature_exposure_rate": 0.24532559638942616,
+          "stage_two_path_coverage": 1.0,
+          "time_to_first_commit": 1.0,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 6204,
+          "stage1_coverage": 1.0,
+          "stage1_errors": 2960,
+          "stage1_committed_error_rate": 0.4771115409413282,
+          "stage2_committed_count": 6204,
+          "stage2_coverage": 1.0,
+          "stage2_errors": 2837,
+          "stage2_committed_error_rate": 0.4572856221792392
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 12408.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 5797.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.4671985815602837,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.4771115409413282,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 12408.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.2385557704706641,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.24532559638942616,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.0,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 2960.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.4771115409413282,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 2837.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.4572856221792392,
+          "std": null
+        }
+      }
+    },
+    "ISO": {
+      "per_seed": {
+        "1": {
+          "paths": 6204,
+          "prefinal_commits": 11767,
+          "prefinal_errors": 5527,
+          "prefinal_committed_error_rate": 0.4697034078354721,
+          "committed_state_coverage": 0.9483397807865893,
+          "committed_revision_rate_per_path": 0.4203739522888459,
+          "revision_opportunities": 11767,
+          "revision_rate_per_opportunity": 0.22163678082773858,
+          "premature_exposure_rate": 0.22888459058671826,
+          "stage_two_path_coverage": 0.9921018697614442,
+          "time_to_first_commit": 1.1033204384268214,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 5612,
+          "stage1_coverage": 0.9045776918117344,
+          "stage1_errors": 2660,
+          "stage1_committed_error_rate": 0.47398431931575197,
+          "stage2_committed_count": 6155,
+          "stage2_coverage": 0.9921018697614442,
+          "stage2_errors": 2867,
+          "stage2_committed_error_rate": 0.465800162469537
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 6204.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 11767.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 5527.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.4697034078354721,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.9483397807865893,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.4203739522888459,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 11767.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.22163678082773858,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.22888459058671826,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.9921018697614442,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.1033204384268214,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 5612.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.9045776918117344,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 2660.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.47398431931575197,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 6155.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.9921018697614442,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 2867.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.465800162469537,
+          "std": null
+        }
+      }
+    }
+  },
+  "source_disjoint_test": {
+    "B0": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 2280,
+          "prefinal_errors": 1202,
+          "prefinal_committed_error_rate": 0.5271929824561403,
+          "committed_state_coverage": 1.0,
+          "committed_revision_rate_per_path": 0.6912280701754386,
+          "revision_opportunities": 2280,
+          "revision_rate_per_opportunity": 0.3456140350877193,
+          "premature_exposure_rate": 0.21842105263157896,
+          "stage_two_path_coverage": 1.0,
+          "time_to_first_commit": 1.0,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 1140,
+          "stage1_coverage": 1.0,
+          "stage1_errors": 612,
+          "stage1_committed_error_rate": 0.5368421052631579,
+          "stage2_committed_count": 1140,
+          "stage2_coverage": 1.0,
+          "stage2_errors": 590,
+          "stage2_committed_error_rate": 0.5175438596491229
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 2280.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 1202.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.5271929824561403,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.6912280701754386,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 2280.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.3456140350877193,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.21842105263157896,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.0,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 612.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.5368421052631579,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 590.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.5175438596491229,
+          "std": null
+        }
+      }
+    },
+    "B1": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 0,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": null,
+          "committed_state_coverage": 0.0,
+          "committed_revision_rate_per_path": 0.0,
+          "revision_opportunities": 0,
+          "revision_rate_per_opportunity": null,
+          "premature_exposure_rate": 0.0,
+          "stage_two_path_coverage": 0.0,
+          "time_to_first_commit": 3.0,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 0,
+          "stage1_coverage": 0.0,
+          "stage1_errors": 0,
+          "stage1_committed_error_rate": null,
+          "stage2_committed_count": 0,
+          "stage2_coverage": 0.0,
+          "stage2_errors": 0,
+          "stage2_committed_error_rate": null
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 0.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": null,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.0,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 0.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": null,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 3.0,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": null,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": null,
+          "std": null
+        }
+      }
+    },
+    "B2": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 1839,
+          "prefinal_errors": 1001,
+          "prefinal_committed_error_rate": 0.5443175638934203,
+          "committed_state_coverage": 0.8065789473684211,
+          "committed_revision_rate_per_path": 0.4543859649122807,
+          "revision_opportunities": 1839,
+          "revision_rate_per_opportunity": 0.2816748232735182,
+          "premature_exposure_rate": 0.17280701754385966,
+          "stage_two_path_coverage": 0.9201754385964912,
+          "time_to_first_commit": 1.3868421052631579,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 790,
+          "stage1_coverage": 0.6929824561403509,
+          "stage1_errors": 440,
+          "stage1_committed_error_rate": 0.5569620253164557,
+          "stage2_committed_count": 1049,
+          "stage2_coverage": 0.9201754385964912,
+          "stage2_errors": 561,
+          "stage2_committed_error_rate": 0.5347950428979981
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 1839.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 1001.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.5443175638934203,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.8065789473684211,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.4543859649122807,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 1839.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.2816748232735182,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.17280701754385966,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.9201754385964912,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.3868421052631579,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 790.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.6929824561403509,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 440.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.5569620253164557,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 1049.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.9201754385964912,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 561.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.5347950428979981,
+          "std": null
+        }
+      }
+    },
+    "B3": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 692,
+          "prefinal_errors": 314,
+          "prefinal_committed_error_rate": 0.45375722543352603,
+          "committed_state_coverage": 0.30350877192982456,
+          "committed_revision_rate_per_path": 0.15087719298245614,
+          "revision_opportunities": 692,
+          "revision_rate_per_opportunity": 0.24855491329479767,
+          "premature_exposure_rate": 0.05175438596491228,
+          "stage_two_path_coverage": 0.6070175438596491,
+          "time_to_first_commit": 2.3929824561403508,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 0,
+          "stage1_coverage": 0.0,
+          "stage1_errors": 0,
+          "stage1_committed_error_rate": null,
+          "stage2_committed_count": 692,
+          "stage2_coverage": 0.6070175438596491,
+          "stage2_errors": 314,
+          "stage2_committed_error_rate": 0.45375722543352603
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 692.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 314.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.45375722543352603,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.30350877192982456,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.15087719298245614,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 692.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.24855491329479767,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.05175438596491228,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.6070175438596491,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 2.3929824561403508,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": null,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 692.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.6070175438596491,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 314.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.45375722543352603,
+          "std": null
+        }
+      }
+    },
+    "B4": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 1839,
+          "prefinal_errors": 1015,
+          "prefinal_committed_error_rate": 0.5519303969548668,
+          "committed_state_coverage": 0.8065789473684211,
+          "committed_revision_rate_per_path": 0.4114035087719298,
+          "revision_opportunities": 1839,
+          "revision_rate_per_opportunity": 0.25502990755845567,
+          "premature_exposure_rate": 0.1692982456140351,
+          "stage_two_path_coverage": 0.9201754385964912,
+          "time_to_first_commit": 1.3868421052631579,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 790,
+          "stage1_coverage": 0.6929824561403509,
+          "stage1_errors": 440,
+          "stage1_committed_error_rate": 0.5569620253164557,
+          "stage2_committed_count": 1049,
+          "stage2_coverage": 0.9201754385964912,
+          "stage2_errors": 575,
+          "stage2_committed_error_rate": 0.5481410867492851
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 1839.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 1015.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.5519303969548668,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.8065789473684211,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.4114035087719298,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 1839.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.25502990755845567,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.1692982456140351,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.9201754385964912,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.3868421052631579,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 790.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.6929824561403509,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 440.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.5569620253164557,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 1049.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.9201754385964912,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 575.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.5481410867492851,
+          "std": null
+        }
+      }
+    },
+    "H0": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 1884,
+          "prefinal_errors": 804,
+          "prefinal_committed_error_rate": 0.4267515923566879,
+          "committed_state_coverage": 0.8263157894736842,
+          "committed_revision_rate_per_path": 0.32894736842105265,
+          "revision_opportunities": 1884,
+          "revision_rate_per_opportunity": 0.19904458598726116,
+          "premature_exposure_rate": 0.08859649122807017,
+          "stage_two_path_coverage": 0.9017543859649123,
+          "time_to_first_commit": 1.3473684210526315,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 856,
+          "stage1_coverage": 0.7508771929824561,
+          "stage1_errors": 376,
+          "stage1_committed_error_rate": 0.4392523364485981,
+          "stage2_committed_count": 1028,
+          "stage2_coverage": 0.9017543859649123,
+          "stage2_errors": 428,
+          "stage2_committed_error_rate": 0.4163424124513619
+        },
+        "12": {
+          "paths": 1140,
+          "prefinal_commits": 1899,
+          "prefinal_errors": 811,
+          "prefinal_committed_error_rate": 0.42706687730384413,
+          "committed_state_coverage": 0.8328947368421052,
+          "committed_revision_rate_per_path": 0.3192982456140351,
+          "revision_opportunities": 1899,
+          "revision_rate_per_opportunity": 0.19167983149025802,
+          "premature_exposure_rate": 0.08859649122807017,
+          "stage_two_path_coverage": 0.9078947368421053,
+          "time_to_first_commit": 1.3342105263157895,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 864,
+          "stage1_coverage": 0.7578947368421053,
+          "stage1_errors": 380,
+          "stage1_committed_error_rate": 0.4398148148148148,
+          "stage2_committed_count": 1035,
+          "stage2_coverage": 0.9078947368421053,
+          "stage2_errors": 431,
+          "stage2_committed_error_rate": 0.41642512077294686
+        },
+        "123": {
+          "paths": 1140,
+          "prefinal_commits": 1895,
+          "prefinal_errors": 814,
+          "prefinal_committed_error_rate": 0.42955145118733506,
+          "committed_state_coverage": 0.831140350877193,
+          "committed_revision_rate_per_path": 0.32894736842105265,
+          "revision_opportunities": 1895,
+          "revision_rate_per_opportunity": 0.19788918205804748,
+          "premature_exposure_rate": 0.08859649122807017,
+          "stage_two_path_coverage": 0.9096491228070176,
+          "time_to_first_commit": 1.337719298245614,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 858,
+          "stage1_coverage": 0.7526315789473684,
+          "stage1_errors": 378,
+          "stage1_committed_error_rate": 0.4405594405594406,
+          "stage2_committed_count": 1037,
+          "stage2_coverage": 0.9096491228070176,
+          "stage2_errors": 436,
+          "stage2_committed_error_rate": 0.420443587270974
+        },
+        "1234": {
+          "paths": 1140,
+          "prefinal_commits": 1896,
+          "prefinal_errors": 805,
+          "prefinal_committed_error_rate": 0.42457805907172996,
+          "committed_state_coverage": 0.8315789473684211,
+          "committed_revision_rate_per_path": 0.3192982456140351,
+          "revision_opportunities": 1896,
+          "revision_rate_per_opportunity": 0.19198312236286919,
+          "premature_exposure_rate": 0.0868421052631579,
+          "stage_two_path_coverage": 0.9070175438596492,
+          "time_to_first_commit": 1.3368421052631578,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 862,
+          "stage1_coverage": 0.756140350877193,
+          "stage1_errors": 378,
+          "stage1_committed_error_rate": 0.4385150812064965,
+          "stage2_committed_count": 1034,
+          "stage2_coverage": 0.9070175438596492,
+          "stage2_errors": 427,
+          "stage2_committed_error_rate": 0.41295938104448743
+        },
+        "12345": {
+          "paths": 1140,
+          "prefinal_commits": 1903,
+          "prefinal_errors": 820,
+          "prefinal_committed_error_rate": 0.43089858118759855,
+          "committed_state_coverage": 0.8346491228070175,
+          "committed_revision_rate_per_path": 0.33245614035087717,
+          "revision_opportunities": 1903,
+          "revision_rate_per_opportunity": 0.19915922228060956,
+          "premature_exposure_rate": 0.09035087719298246,
+          "stage_two_path_coverage": 0.9114035087719298,
+          "time_to_first_commit": 1.330701754385965,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 864,
+          "stage1_coverage": 0.7578947368421053,
+          "stage1_errors": 380,
+          "stage1_committed_error_rate": 0.4398148148148148,
+          "stage2_committed_count": 1039,
+          "stage2_coverage": 0.9114035087719298,
+          "stage2_errors": 440,
+          "stage2_committed_error_rate": 0.42348411934552455
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": 0.0
+        },
+        "prefinal_commits": {
+          "mean": 1895.4,
+          "std": 7.092249290598859
+        },
+        "prefinal_errors": {
+          "mean": 810.8,
+          "std": 6.610597552415364
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.4277693122214391,
+          "std": 0.0024840294260750862
+        },
+        "committed_state_coverage": {
+          "mean": 0.8313157894736841,
+          "std": 0.0031106356537714173
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.3257894736842105,
+          "std": 0.0060963334575066894
+        },
+        "revision_opportunities": {
+          "mean": 1895.4,
+          "std": 7.092249290598859
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.1959511888358091,
+          "std": 0.0037949455646976962
+        },
+        "premature_exposure_rate": {
+          "mean": 0.08859649122807017,
+          "std": 0.001240538212607977
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.9075438596491228,
+          "std": 0.003648532340892161
+        },
+        "time_to_first_commit": {
+          "mean": 1.3373684210526315,
+          "std": 0.0062212713075428345
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "stage1_committed_count": {
+          "mean": 860.8,
+          "std": 3.6331804249169903
+        },
+        "stage1_coverage": {
+          "mean": 0.7550877192982457,
+          "std": 0.0031870003727342117
+        },
+        "stage1_errors": {
+          "mean": 378.4,
+          "std": 1.6733200530681511
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.43959129756883303,
+          "std": 0.0007599929388416766
+        },
+        "stage2_committed_count": {
+          "mean": 1034.6,
+          "std": 4.159326868617084
+        },
+        "stage2_coverage": {
+          "mean": 0.9075438596491228,
+          "std": 0.003648532340892161
+        },
+        "stage2_errors": {
+          "mean": 432.4,
+          "std": 5.504543577809154
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.4179309241770589,
+          "std": 0.004082233056677556
+        }
+      }
+    },
+    "O1": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 1228,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": 0.0,
+          "committed_state_coverage": 0.5385964912280702,
+          "committed_revision_rate_per_path": 0.20087719298245615,
+          "revision_opportunities": 1228,
+          "revision_rate_per_opportunity": 0.18648208469055375,
+          "premature_exposure_rate": 0.0,
+          "stage_two_path_coverage": 0.6140350877192983,
+          "time_to_first_commit": 1.9228070175438596,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 528,
+          "stage1_coverage": 0.4631578947368421,
+          "stage1_errors": 0,
+          "stage1_committed_error_rate": 0.0,
+          "stage2_committed_count": 700,
+          "stage2_coverage": 0.6140350877192983,
+          "stage2_errors": 0,
+          "stage2_committed_error_rate": 0.0
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 1228.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.0,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.5385964912280702,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.20087719298245615,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 1228.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.18648208469055375,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.6140350877192983,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.9228070175438596,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 528.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.4631578947368421,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 700.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.6140350877192983,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 0.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.0,
+          "std": null
+        }
+      }
+    },
+    "LR": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 1906,
+          "prefinal_errors": 823,
+          "prefinal_committed_error_rate": 0.431794333683106,
+          "committed_state_coverage": 0.8359649122807018,
+          "committed_revision_rate_per_path": 0.3385964912280702,
+          "revision_opportunities": 1906,
+          "revision_rate_per_opportunity": 0.2025183630640084,
+          "premature_exposure_rate": 0.09298245614035087,
+          "stage_two_path_coverage": 0.9192982456140351,
+          "time_to_first_commit": 1.3280701754385964,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 858,
+          "stage1_coverage": 0.7526315789473684,
+          "stage1_errors": 376,
+          "stage1_committed_error_rate": 0.4382284382284382,
+          "stage2_committed_count": 1048,
+          "stage2_coverage": 0.9192982456140351,
+          "stage2_errors": 447,
+          "stage2_committed_error_rate": 0.4265267175572519
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 1906.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 823.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.431794333683106,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.8359649122807018,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.3385964912280702,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 1906.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.2025183630640084,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.09298245614035087,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.9192982456140351,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.3280701754385964,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 858.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.7526315789473684,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 376.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.4382284382284382,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 1048.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.9192982456140351,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 447.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.4265267175572519,
+          "std": null
+        }
+      }
+    },
+    "PLATT": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 2280,
+          "prefinal_errors": 1223,
+          "prefinal_committed_error_rate": 0.5364035087719298,
+          "committed_state_coverage": 1.0,
+          "committed_revision_rate_per_path": 0.5070175438596491,
+          "revision_opportunities": 2280,
+          "revision_rate_per_opportunity": 0.2535087719298246,
+          "premature_exposure_rate": 0.1956140350877193,
+          "stage_two_path_coverage": 1.0,
+          "time_to_first_commit": 1.0,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 1140,
+          "stage1_coverage": 1.0,
+          "stage1_errors": 612,
+          "stage1_committed_error_rate": 0.5368421052631579,
+          "stage2_committed_count": 1140,
+          "stage2_coverage": 1.0,
+          "stage2_errors": 611,
+          "stage2_committed_error_rate": 0.5359649122807018
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 2280.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 1223.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.5364035087719298,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.5070175438596491,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 2280.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.2535087719298246,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.1956140350877193,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.0,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 612.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.5368421052631579,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 611.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.5359649122807018,
+          "std": null
+        }
+      }
+    },
+    "ISO": {
+      "per_seed": {
+        "1": {
+          "paths": 1140,
+          "prefinal_commits": 2199,
+          "prefinal_errors": 1193,
+          "prefinal_committed_error_rate": 0.542519326966803,
+          "committed_state_coverage": 0.9644736842105263,
+          "committed_revision_rate_per_path": 0.4570175438596491,
+          "revision_opportunities": 2199,
+          "revision_rate_per_opportunity": 0.23692587539790813,
+          "premature_exposure_rate": 0.18859649122807018,
+          "stage_two_path_coverage": 0.9956140350877193,
+          "time_to_first_commit": 1.0710526315789475,
+          "final_state_identity": 1.0,
+          "stage1_committed_count": 1064,
+          "stage1_coverage": 0.9333333333333333,
+          "stage1_errors": 582,
+          "stage1_committed_error_rate": 0.5469924812030075,
+          "stage2_committed_count": 1135,
+          "stage2_coverage": 0.9956140350877193,
+          "stage2_errors": 611,
+          "stage2_committed_error_rate": 0.5383259911894274
+        }
+      },
+      "summary": {
+        "paths": {
+          "mean": 1140.0,
+          "std": null
+        },
+        "prefinal_commits": {
+          "mean": 2199.0,
+          "std": null
+        },
+        "prefinal_errors": {
+          "mean": 1193.0,
+          "std": null
+        },
+        "prefinal_committed_error_rate": {
+          "mean": 0.542519326966803,
+          "std": null
+        },
+        "committed_state_coverage": {
+          "mean": 0.9644736842105263,
+          "std": null
+        },
+        "committed_revision_rate_per_path": {
+          "mean": 0.4570175438596491,
+          "std": null
+        },
+        "revision_opportunities": {
+          "mean": 2199.0,
+          "std": null
+        },
+        "revision_rate_per_opportunity": {
+          "mean": 0.23692587539790813,
+          "std": null
+        },
+        "premature_exposure_rate": {
+          "mean": 0.18859649122807018,
+          "std": null
+        },
+        "stage_two_path_coverage": {
+          "mean": 0.9956140350877193,
+          "std": null
+        },
+        "time_to_first_commit": {
+          "mean": 1.0710526315789475,
+          "std": null
+        },
+        "final_state_identity": {
+          "mean": 1.0,
+          "std": null
+        },
+        "stage1_committed_count": {
+          "mean": 1064.0,
+          "std": null
+        },
+        "stage1_coverage": {
+          "mean": 0.9333333333333333,
+          "std": null
+        },
+        "stage1_errors": {
+          "mean": 582.0,
+          "std": null
+        },
+        "stage1_committed_error_rate": {
+          "mean": 0.5469924812030075,
+          "std": null
+        },
+        "stage2_committed_count": {
+          "mean": 1135.0,
+          "std": null
+        },
+        "stage2_coverage": {
+          "mean": 0.9956140350877193,
+          "std": null
+        },
+        "stage2_errors": {
+          "mean": 611.0,
+          "std": null
+        },
+        "stage2_committed_error_rate": {
+          "mean": 0.5383259911894274,
+          "std": null
+        }
+      }
+    }
+  },
+  "paired_bootstrap_h0_vs_b4": {
+    "official_test": {
+      "1": {
+        "error_absolute_reduction": {
+          "estimate": 0.12477295003974465,
+          "ci95": [
+            0.10872298255583895,
+            0.1407481313283428
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.11121856866537716,
+          "ci95": [
+            0.09010315925209544,
+            0.13249516441005804
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.07652051815057576,
+          "ci95": [
+            0.06543739906522922,
+            0.08761399724311125
+          ]
+        }
+      },
+      "12": {
+        "error_absolute_reduction": {
+          "estimate": 0.11705302213788954,
+          "ci95": [
+            0.10065348684030476,
+            0.13380373021771816
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.12169568020631849,
+          "ci95": [
+            0.10090264345583494,
+            0.14184397163120568
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.08415793937256313,
+          "ci95": [
+            0.07323394095129267,
+            0.09468504550971017
+          ]
+        }
+      },
+      "123": {
+        "error_absolute_reduction": {
+          "estimate": 0.1233575005404397,
+          "ci95": [
+            0.10752341128989283,
+            0.139072990229162
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.11154094132817532,
+          "ci95": [
+            0.09058671824629272,
+            0.13313990973565443
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.07777407224294194,
+          "ci95": [
+            0.06670372051417595,
+            0.08911806552002859
+          ]
+        }
+      },
+      "1234": {
+        "error_absolute_reduction": {
+          "estimate": 0.11895965038843864,
+          "ci95": [
+            0.10261957747682895,
+            0.13559332306574137
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.12201805286911666,
+          "ci95": [
+            0.10090264345583494,
+            0.14265393294648612
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.08419867191928573,
+          "ci95": [
+            0.07332999999422189,
+            0.09492824237045057
+          ]
+        }
+      },
+      "12345": {
+        "error_absolute_reduction": {
+          "estimate": 0.12267881138007514,
+          "ci95": [
+            0.10647105771993337,
+            0.1388280831044333
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.11686009026434557,
+          "ci95": [
+            0.09590586718246291,
+            0.1382978723404255
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.08097360685608915,
+          "ci95": [
+            0.070080192584969,
+            0.09216884270738629
+          ]
+        }
+      }
+    },
+    "source_disjoint_test": {
+      "1": {
+        "error_absolute_reduction": {
+          "estimate": 0.12517880459817887,
+          "ci95": [
+            0.08993777484187013,
+            0.16001297809384815
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.08245614035087717,
+          "ci95": [
+            0.03157894736842104,
+            0.13245614035087716
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.05598532157119451,
+          "ci95": [
+            0.029883624695834027,
+            0.08194455865058989
+          ]
+        }
+      },
+      "12": {
+        "error_absolute_reduction": {
+          "estimate": 0.12486351965102266,
+          "ci95": [
+            0.08955173375520217,
+            0.1612444104475173
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.09210526315789475,
+          "ci95": [
+            0.041228070175438614,
+            0.14210526315789473
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.06335007606819765,
+          "ci95": [
+            0.037273576542487724,
+            0.08983464293368322
+          ]
+        }
+      },
+      "123": {
+        "error_absolute_reduction": {
+          "estimate": 0.12237894576753172,
+          "ci95": [
+            0.08751329523875181,
+            0.157511620993049
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.08245614035087717,
+          "ci95": [
+            0.031578947368421095,
+            0.13245614035087722
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.05714072550040819,
+          "ci95": [
+            0.03087446780017023,
+            0.08396627229214786
+          ]
+        }
+      },
+      "1234": {
+        "error_absolute_reduction": {
+          "estimate": 0.12735233788313682,
+          "ci95": [
+            0.09210162466191897,
+            0.16395886812025165
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.09210526315789475,
+          "ci95": [
+            0.0429824561403509,
+            0.14210526315789473
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.06304678519558649,
+          "ci95": [
+            0.03739551004954488,
+            0.08952682798485717
+          ]
+        }
+      },
+      "12345": {
+        "error_absolute_reduction": {
+          "estimate": 0.12103181576726824,
+          "ci95": [
+            0.0856843916613026,
+            0.15669917211616122
+          ]
+        },
+        "revision_per_path_absolute_reduction": {
+          "estimate": 0.07894736842105265,
+          "ci95": [
+            0.028070175438596523,
+            0.13245614035087716
+          ]
+        },
+        "revision_per_opportunity_absolute_reduction": {
+          "estimate": 0.05587068527784611,
+          "ci95": [
+            0.02923949276023349,
+            0.08286687371808954
+          ]
+        }
+      }
+    }
+  },
+  "risk_coverage": {
+    "definition": "normalized trapezoidal area of prefinal committed error over committed-state coverage",
+    "descriptive_only": true,
+    "coverage_interval": [
+      0.75,
+      1.0
+    ],
+    "curves": {
+      "B2:1": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.073420373952,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.43397351691136254,
+        "error_at_0_80": 0.43490540665538946,
+        "error_at_0_90": 0.4330742805120536
+      },
+      "B4:1": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.073420373952,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.4486447547239677,
+        "error_at_0_80": 0.4487095071360574,
+        "error_at_0_90": 0.4486062164721186
+      },
+      "H0:1": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.000725338491,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.3536190504426762,
+        "error_at_0_80": 0.31938897002606687,
+        "error_at_0_90": 0.36043313724715637
+      },
+      "H0:12": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.000322372663,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.356126602874151,
+        "error_at_0_80": 0.32957999851411884,
+        "error_at_0_90": 0.3606829252083329
+      },
+      "H0:123": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.000322372663,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.35317191472877346,
+        "error_at_0_80": 0.3200672945482807,
+        "error_at_0_90": 0.36109350493331627
+      },
+      "H0:1234": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.000644745326,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.3552358596114006,
+        "error_at_0_80": 0.3279751985630752,
+        "error_at_0_90": 0.3597705099184181
+      },
+      "H0:12345": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.000322372663,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.3534858556214126,
+        "error_at_0_80": 0.32212375865689236,
+        "error_at_0_90": 0.3608738108784504
+      },
+      "LR:1": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.000644745326,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.3538720795473385,
+        "error_at_0_80": 0.319085441226452,
+        "error_at_0_90": 0.3611936846388737
+      },
+      "PLATT:1": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.091553836235,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.4616361336870869,
+        "error_at_0_80": 0.4628950459992754,
+        "error_at_0_90": 0.4652810674923994
+      },
+      "ISO:1": {
+        "coverage_lower": 0.75,
+        "coverage_upper": 1.0,
+        "observed_coverage_min": 0.073420373952,
+        "observed_coverage_max": 1.0,
+        "normalized_aurc": 0.4603544526021055,
+        "error_at_0_80": 0.45609425910405776,
+        "error_at_0_90": 0.46680402485449113
+      }
+    }
+  },
+  "primary_archived_interval_crosscheck": {
+    "1": {
+      "error_reduction": 0.12477295003974465,
+      "revision_relative_reduction": 0.2890657729367407,
+      "error_reduction_ci95": [
+        0.10839676573166092,
+        0.1401062760036013
+      ],
+      "revision_relative_reduction_ci95": [
+        0.23695885460897276,
+        0.3397775282100648
+      ]
+    },
+    "12": {
+      "error_reduction": 0.11705302213788954,
+      "revision_relative_reduction": 0.31629660661918724,
+      "error_reduction_ci95": [
+        0.10069705397026987,
+        0.13377403215243638
+      ],
+      "revision_relative_reduction_ci95": [
+        0.26987677115124126,
+        0.36119346186541806
+      ]
+    },
+    "123": {
+      "error_reduction": 0.1233575005404397,
+      "revision_relative_reduction": 0.2899036447423543,
+      "error_reduction_ci95": [
+        0.10739557247040676,
+        0.13920860462794496
+      ],
+      "revision_relative_reduction_ci95": [
+        0.24435041988891337,
+        0.3404217440313697
+      ]
+    },
+    "1234": {
+      "error_reduction": 0.11895965038843864,
+      "revision_relative_reduction": 0.3171344784248009,
+      "error_reduction_ci95": [
+        0.10249821113384115,
+        0.13456715705850641
+      ],
+      "revision_relative_reduction_ci95": [
+        0.27111760731919415,
+        0.36386323920727587
+      ]
+    },
+    "12345": {
+      "error_reduction": 0.12267881138007514,
+      "revision_relative_reduction": 0.30372852953498114,
+      "error_reduction_ci95": [
+        0.10690694921908454,
+        0.1391417965212065
+      ],
+      "revision_relative_reduction_ci95": [
+        0.25227021782045705,
+        0.3528844460102166
+      ]
+    }
+  }
+}

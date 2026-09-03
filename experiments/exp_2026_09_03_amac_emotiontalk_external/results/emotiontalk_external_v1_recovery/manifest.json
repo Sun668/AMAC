@@ -1,0 +1,43 @@
+{
+  "schema": "amac-emotiontalk-manifest-v1",
+  "status": "completed_unvalidated",
+  "run_id": "emotiontalk_external_v1_recovery",
+  "parameter_snapshot_sha256": "c8d68ac037f3fe9e77861d1be2de8d5d95c46ba88ed39207ddef757a8e4073b2",
+  "protocol_version": "2026-09-03-amac-emotiontalk-v1",
+  "used_groups": {
+    "train": [
+      "G00001",
+      "G00002",
+      "G00003",
+      "G00004",
+      "G00005",
+      "G00006",
+      "G00007",
+      "G00008",
+      "G00009",
+      "G00010",
+      "G00011",
+      "G00012"
+    ],
+    "test": [
+      "G00013",
+      "G00014",
+      "G00015"
+    ]
+  },
+  "counts": {
+    "seeds": 5,
+    "test_clips": 3998,
+    "paths": 6,
+    "conditions": 7,
+    "rows": 839580
+  },
+  "artifacts": {
+    "metrics.json": "f79e79f30cacc0b04692d4c4ca2728787369241e5424ca03993d87a965f8656f",
+    "decision.json": "302b1f3e024647c84047bb1efb45fb7f1a2b3c768665ecc5ce13e998194b5067",
+    "costs.json": "17112ea60a77ad53b6e532815414608bea6775eddcd89d0cf0bf7d982ffca7eb",
+    "per_path.csv": "230cf3dfce5de672d9497c1b3fa4394bac27a7da46348221328851e7b1e3affd",
+    "predictions.npz": "adbafd4055b3f5169f63f8ca9daa8c04857363287d10c16ba412947f232239fb",
+    "models.pt": "9b7ed8bc3205b428b0b3b538f407d15aeea02f1df3844d1b7085f99a0c7ef724"
+  }
+}

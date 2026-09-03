@@ -1,0 +1,19 @@
+{
+  "schema": "amac-development-decision-v1",
+  "status": "completed",
+  "run_id": "dev_chsimsv2_amac_mlp_v7_seed20260903",
+  "parameter_snapshot_sha256": "cf8909ce3b4a8a57edef9b8d500ea0c004dffd4fa77ce05cf8b3e4a677e94bd6",
+  "protocol_version": "2026-09-03-amac-v1",
+  "checks": {
+    "problem_eager_revision": true,
+    "problem_eager_premature": true,
+    "m0_stage_two_coverage": true,
+    "m0_error_point": true,
+    "m0_error_interval": true,
+    "m0_revision_point": true,
+    "m0_revision_interval": true,
+    "final_state_identity": true
+  },
+  "prepare_formal_test": true,
+  "scope": "Development evidence only; this decision cannot support a final thesis result claim."
+}

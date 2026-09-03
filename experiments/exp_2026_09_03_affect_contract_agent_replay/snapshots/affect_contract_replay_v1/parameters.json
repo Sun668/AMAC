@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "experiment": "affect_contract_agent_replay",
+  "run_id": "affect_contract_replay_v1",
+  "selected_estimator": "LR",
+  "canonical_seed": 1,
+  "expected_clips": 1034,
+  "arrival_orders": [
+    "TAV",
+    "TVA",
+    "ATV",
+    "AVT",
+    "VTA",
+    "VAT"
+  ],
+  "expected_paths": 6204,
+  "expected_observations": 18612,
+  "gates": {
+    "trajectory_mismatches_max": 0,
+    "final_identity_required": true,
+    "robustness_checks_all_pass": true,
+    "latency_is_descriptive_only": true
+  },
+  "external_api_usd": 0,
+  "frozen_at": "2026-09-03T04:30:02.594849+00:00",
+  "artifacts": {
+    "replay_input": {
+      "path": "experiments/exp_2026_09_03_affect_contract_agent_replay/inputs/replay.jsonl",
+      "sha256": "2cc1977b73923878f2dd1c9e011cdfaeade229b7f656a3086ac1a0387c017e7b"
+    },
+    "input_manifest": {
+      "path": "experiments/exp_2026_09_03_affect_contract_agent_replay/inputs/manifest.json",
+      "sha256": "599630bcc372c9aa0628faf2475d38db12bd7a9a3b3e42f1e450c4371721abf5"
+    },
+    "prepare_script": {
+      "path": "experiments/exp_2026_09_03_affect_contract_agent_replay/scripts/prepare_replay.py",
+      "sha256": "4c788303ff7f995e71202d035bfcc4c032357d3d7170aa901cae0f26e9d4b61e"
+    },
+    "replay_implementation": {
+      "path": "experiments/exp_2026_09_03_affect_contract_agent_replay/scripts/replay.go",
+      "sha256": "5e342e9ade62ca9f79c2df66bb96cb52c7b2a73ffc5f7d3a38448845f65c7852"
+    },
+    "validator": {
+      "path": "experiments/exp_2026_09_03_affect_contract_agent_replay/scripts/validate_replay.py",
+      "sha256": "a4be50b1fd16ac4f7d76641a2363efadf4ef0858cc36a2ce4c749804bc3b385f"
+    },
+    "contract": {
+      "path": "internal/affectcontract/contract.go",
+      "sha256": "e95632d9b8bae4bed0b1d0212bf1de1643198f27e2306a76b526875d327cb2ec"
+    },
+    "agent_tool": {
+      "path": "internal/tools/affect_contract.go",
+      "sha256": "88cea97b176a9f371638560ac0d75d53fa86502aa62c5fe2d0304ae7d948d43d"
+    },
+    "competitive_validator": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/results/competitive_baselines_v1/validator.json",
+      "sha256": "efc4c0cf34706e0e83f6cd71ac862206711203ff2c79a33093e7a35fc8411a66"
+    }
+  }
+}

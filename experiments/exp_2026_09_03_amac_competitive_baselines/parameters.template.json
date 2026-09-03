@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "experiment": "amac_competitive_baselines",
+  "run_id": "competitive_baselines_v1",
+  "source_result": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery",
+  "source_snapshot": "experiments/exp_2026_09_03_amac_chsimsv2_test/snapshots/chsimsv2_test_v1_recovery",
+  "seeds": [1, 12, 123, 1234, 12345],
+  "conditions": ["H0", "B2", "B4", "LR", "PLATT", "ISO"],
+  "threshold_grid": [0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5],
+  "margin_grid": [0.0, 0.05, 0.1, 0.15, 0.2],
+  "target_coverage": 0.9,
+  "revision_weight": 0.25,
+  "wait_weight": 0.05,
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20260903,
+  "lr_noninferiority": {
+    "committed_error_rate": 0.01,
+    "revision_rate": 0.02,
+    "coverage": 0.03
+  },
+  "feature_based_utility_wins_required": 4,
+  "test_labels_used_for_fit_or_tuning": false
+}

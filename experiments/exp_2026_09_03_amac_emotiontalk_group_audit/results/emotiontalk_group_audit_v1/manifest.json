@@ -1,0 +1,21 @@
+{
+  "schema": "emotiontalk-group-audit-manifest-v1",
+  "status": "completed",
+  "run_id": "emotiontalk_group_audit_v1",
+  "parameter_snapshot_sha256": "da19556f27d5b54578f48712993a2925b130b4413ef15a625baca4da5bfff0a8",
+  "protocol_version": "2026-09-03-emotiontalk-group-audit-v1",
+  "source": {
+    "rows": "experiments/exp_2026_09_03_amac_emotiontalk_external/results/emotiontalk_external_v1_recovery/per_path.csv",
+    "validator": "experiments/exp_2026_09_03_amac_emotiontalk_external/results/emotiontalk_external_v1_recovery/validator.json",
+    "snapshot": "experiments/exp_2026_09_03_amac_emotiontalk_external/snapshots/emotiontalk_external_v1_recovery/parameters.json",
+    "rows_sha256": "230cf3dfce5de672d9497c1b3fa4394bac27a7da46348221328851e7b1e3affd",
+    "validator_sha256": "64f3666c0942af255afb95436f58d1ed9e5a4eeb9f3bd87c199cbfd5d6909f8c",
+    "snapshot_sha256": "c8d68ac037f3fe9e77861d1be2de8d5d95c46ba88ed39207ddef757a8e4073b2"
+  },
+  "artifacts": {
+    "group_effects.csv": "a19fc8d1a41897b0ea05213913d247f2919bae1abe472d5cff5b42eea794ebe3",
+    "metrics.json": "0e1fe153249e7d9985359313bb7e5225aa867a48c7a4fe1827986d3b59e72b7a",
+    "decision.json": "1fb0a140f12f644db37ef9221bee4fb6d274e200fae55ffe16c8da32e1efd60f",
+    "costs.json": "bc2df2eed18e0bf54cc7adde094f80ff62a44317d0f53b8180ab9206da3e0801"
+  }
+}

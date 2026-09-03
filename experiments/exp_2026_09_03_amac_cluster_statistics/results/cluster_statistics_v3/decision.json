@@ -1,0 +1,10 @@
+{
+  "schema": "amac-cluster-statistics-decision-v1",
+  "status": "completed",
+  "run_id": "cluster_statistics_v3",
+  "parameter_snapshot_sha256": "f9795ce79b4b3d169f60f8901010d4b0c6fe91b35cad04a317c323e208f24a53",
+  "protocol_version": "2026-09-03-amac-cluster-statistics-v3",
+  "valid_result": true,
+  "classification": "posthoc_statistical_correction",
+  "supersedes_clip_bootstrap_for_cross_source_uncertainty": true
+}

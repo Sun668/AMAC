@@ -1,0 +1,13 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+data/
+outputs/
+paper/output/
+paper/tmp/
+*.pkl
+*.pt
+*.pth
+*.npz
+*.npy

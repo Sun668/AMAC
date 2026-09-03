@@ -1,0 +1,15 @@
+{
+  "schema": "amac-p0-robustness-validator-v1",
+  "status": "accepted",
+  "run_id": "p0_robustness_v2",
+  "parameter_snapshot_sha256": "ac5d9e019036cdd292d27c9a1ac07042f3bfec22c706acfd1caa97396a39ae15",
+  "accepted": true,
+  "errors": [],
+  "checks": {
+    "source_artifact_hashes": true,
+    "sample_and_source_split": true,
+    "stage_denominators": true,
+    "risk_coverage": true,
+    "terminal_identity": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "amac-risk-contract-manifest-v1",
+  "status": "completed_unvalidated",
+  "run_id": "risk_contract_v1",
+  "parameter_snapshot_sha256": "e1e4beb2aff1eae5ab839e84da1501711b5d985998d6f8b6329919782ee43efb",
+  "protocol_version": "2026-09-03-amac-risk-contract-v1",
+  "dataset_sha256": "c5327d86ff1521395935d7b2929a3d3a56a9770a32edeb1feb16eac89177f8c5",
+  "used_splits": [
+    "train",
+    "valid"
+  ],
+  "forbidden_split_indexed": false,
+  "counts": {
+    "seeds": 5,
+    "evaluation_clips": 647,
+    "paths_per_clip": 6,
+    "conditions": 8,
+    "rows": 155280
+  },
+  "artifacts": {
+    "metrics.json": "bd5462006b3e8177073a79ed1950fb0261f1a8e897b131349b21552e0f341691",
+    "decision.json": "55c00926ea1d817aa7bdc5e5d8ad5fb7113611a736f625b198a7c627bd8e2cf7",
+    "costs.json": "1102ff1ab9d496adafc190b38125ac56888cb67331978b1e63ee1d5b80505da3",
+    "per_path.csv": "453842bf2efff093c5037eea9512937dfcd1f69a69edc7544d087a568187d5ec",
+    "frontier.csv": "c8ab7aa1c03d04c97613d98b222e458e747087003bfa07d24a343f017d40ddba",
+    "predictions.npz": "8fd8ef288df9b9787fb3be87d5d82b38ed370f8591d848d46feff575815c56b3",
+    "models.pt": "86a50dd3bbf44f73166d2dc37f80fa395ecc22aa878dc20e74ecd7b1aad8b314"
+  }
+}

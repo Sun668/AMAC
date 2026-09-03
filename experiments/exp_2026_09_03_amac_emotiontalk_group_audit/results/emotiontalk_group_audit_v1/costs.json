@@ -1,0 +1,9 @@
+{
+  "schema": "emotiontalk-group-audit-costs-v1",
+  "status": "completed",
+  "run_id": "emotiontalk_group_audit_v1",
+  "parameter_snapshot_sha256": "da19556f27d5b54578f48712993a2925b130b4413ef15a625baca4da5bfff0a8",
+  "protocol_version": "2026-09-03-emotiontalk-group-audit-v1",
+  "external_api_usd": 0.0,
+  "wall_seconds": 1.6207869052886963
+}

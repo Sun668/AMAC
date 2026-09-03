@@ -1,0 +1,30 @@
+{
+  "schema": "amac-development-manifest-v1",
+  "status": "completed_unvalidated",
+  "run_id": "dev_chsimsv2_amac_mlp_v7_seed20260903",
+  "parameter_snapshot_sha256": "cf8909ce3b4a8a57edef9b8d500ea0c004dffd4fa77ce05cf8b3e4a677e94bd6",
+  "protocol_version": "2026-09-03-amac-v1",
+  "dataset": {
+    "name": "CH-SIMS v2",
+    "sha256": "c5327d86ff1521395935d7b2929a3d3a56a9770a32edeb1feb16eac89177f8c5",
+    "used_splits": [
+      "train",
+      "valid"
+    ],
+    "forbidden_split_indexed": false
+  },
+  "counts": {
+    "train": 2722,
+    "valid": 647,
+    "arrival_paths": 6,
+    "rows": 27174
+  },
+  "artifacts": {
+    "metrics.json": "fcc91b0bc014a7fcb75054a2edfa9f5ef21d87999f24e6195300b296c128fb9e",
+    "predictions.npz": "8bdf218b2a8965faf954086d78b284fc420e54031c5c1493234d5323d954e7f6",
+    "per_path.csv": "490e34302c8619a7f7e418d1f4c50dfe1db778f496beaec57f1e7cb4b64cd617",
+    "model.pt": "14678f2be4607345c939f812a226256514ab118460547ce28aad99be30aad3a3",
+    "costs.json": "51b9fc310be59e08aa79a29f019e79f0b1a4798918540b3256838f7e7cefb09b",
+    "decision.json": "5bddf8ac0f44accd243187a02bb0fc48a5ef21608bc053e4ca0851e85d66f771"
+  }
+}

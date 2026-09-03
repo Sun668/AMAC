@@ -1,0 +1,15 @@
+{
+  "schema": "amac-masked-fusion-test-validator-v1",
+  "status": "passed",
+  "run_id": "masked_fusion_test_v1",
+  "parameter_snapshot_sha256": "2de4dc06420c6ddb1ab5336c7411be1f7f810b732e1310e0948ac76759d43c61",
+  "protocol_version": "2026-09-03-amac-masked-fusion-test-v1",
+  "checks": {
+    "hashes": true,
+    "splits": true,
+    "rows": true,
+    "metrics": true,
+    "decision": true
+  },
+  "errors": []
+}

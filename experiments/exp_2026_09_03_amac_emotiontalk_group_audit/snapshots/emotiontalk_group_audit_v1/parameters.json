@@ -1,0 +1,75 @@
+{
+  "schema": "research-experiment-parameters-v1",
+  "status": "frozen",
+  "experiment_id": "exp_2026_09_03_amac_emotiontalk_group_audit",
+  "run_id": "emotiontalk_group_audit_v1",
+  "created_at": "2026-09-03T00:00:00+08:00",
+  "hypothesis": {
+    "run_class": "posthoc_group_descriptive_audit",
+    "direction": "B4_minus_H0_positive_favors_H0",
+    "inferential_ci": false
+  },
+  "dataset": {
+    "name": "EmotionTalk",
+    "expected_test_clips": 3998,
+    "expected_test_groups": [
+      "G00013",
+      "G00014",
+      "G00015"
+    ]
+  },
+  "sampling": {
+    "unit": "released_top_level_group",
+    "group_rule": "clip_id path component before first slash",
+    "retain_all_paths": true,
+    "paths_per_clip": 6,
+    "risk_seeds": [
+      1,
+      12,
+      123,
+      1234,
+      12345
+    ]
+  },
+  "models": {
+    "rows": "experiments/exp_2026_09_03_amac_emotiontalk_external/results/emotiontalk_external_v1_recovery/per_path.csv",
+    "validator": "experiments/exp_2026_09_03_amac_emotiontalk_external/results/emotiontalk_external_v1_recovery/validator.json",
+    "snapshot": "experiments/exp_2026_09_03_amac_emotiontalk_external/snapshots/emotiontalk_external_v1_recovery/parameters.json",
+    "rows_sha256": "230cf3dfce5de672d9497c1b3fa4394bac27a7da46348221328851e7b1e3affd",
+    "validator_sha256": "64f3666c0942af255afb95436f58d1ed9e5a4eeb9f3bd87c199cbfd5d6909f8c",
+    "snapshot_sha256": "c8d68ac037f3fe9e77861d1be2de8d5d95c46ba88ed39207ddef757a8e4073b2"
+  },
+  "evaluation": {
+    "metrics": [
+      "error_reduction",
+      "revision_path_reduction",
+      "coverage_gap"
+    ],
+    "report": "all_seed_by_group_rows"
+  },
+  "statistics": {
+    "confidence_interval": "not_reported_only_three_independent_groups",
+    "summary": "per_group_seed_range"
+  },
+  "prompts": {
+    "used": false,
+    "max_prompt_tokens": 0
+  },
+  "costs": {
+    "external_api_usd": 0
+  },
+  "environment": {
+    "external_network": false,
+    "runner_path": "experiments/exp_2026_09_03_amac_emotiontalk_group_audit/scripts/run_analysis.py",
+    "validator_path": "experiments/exp_2026_09_03_amac_emotiontalk_group_audit/scripts/validate_analysis.py",
+    "protocol_version": "2026-09-03-emotiontalk-group-audit-v1",
+    "runner_sha256": "da2d1d8297c4b94327b078b0263a7fc29b0f95ddadc510953151a2515c42e933",
+    "validator_sha256": "270634c87f1466166f5ae03ab98063b181992323881e569d688673930e27f157"
+  },
+  "gates": {
+    "validity_only": true,
+    "all_source_hashes_match": true,
+    "all_rows_reproducible": true,
+    "weak_or_mixed_effect_does_not_invalidate": true
+  }
+}

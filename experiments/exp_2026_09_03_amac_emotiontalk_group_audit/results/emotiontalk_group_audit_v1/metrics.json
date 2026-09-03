@@ -1,0 +1,66 @@
+{
+  "schema": "emotiontalk-group-audit-metrics-v1",
+  "status": "completed",
+  "run_id": "emotiontalk_group_audit_v1",
+  "parameter_snapshot_sha256": "da19556f27d5b54578f48712993a2925b130b4413ef15a625baca4da5bfff0a8",
+  "protocol_version": "2026-09-03-emotiontalk-group-audit-v1",
+  "independent_groups": 3,
+  "confidence_interval_reported": false,
+  "reason": "Only three released top-level test groups are available.",
+  "groups": {
+    "G00013": {
+      "clips": 1383,
+      "error_reduction": {
+        "min": 0.05027363553944397,
+        "max": 0.06488127274014882,
+        "mean": 0.05734375940500382
+      },
+      "revision_path_reduction": {
+        "min": -0.055194022656061714,
+        "max": -0.030609785490479602,
+        "mean": -0.04181730537478908
+      },
+      "coverage_gap": {
+        "min": 0.021089419137141463,
+        "max": 0.041937816341287015,
+        "mean": 0.03039286575078328
+      }
+    },
+    "G00014": {
+      "clips": 1479,
+      "error_reduction": {
+        "min": 0.0530414046305584,
+        "max": 0.06404203992291202,
+        "mean": 0.058048220949265816
+      },
+      "revision_path_reduction": {
+        "min": -0.031102096010818092,
+        "max": -0.010592742844264147,
+        "mean": -0.022244759972954685
+      },
+      "coverage_gap": {
+        "min": 0.01656524678837057,
+        "max": 0.03673653369393737,
+        "mean": 0.026211404101870662
+      }
+    },
+    "G00015": {
+      "clips": 1136,
+      "error_reduction": {
+        "min": 0.037556068964433365,
+        "max": 0.04824056388202069,
+        "mean": 0.042596057837822596
+      },
+      "revision_path_reduction": {
+        "min": -0.03213028169014087,
+        "max": -0.012617370892018809,
+        "mean": -0.024882629107981225
+      },
+      "coverage_gap": {
+        "min": 0.030663145539906123,
+        "max": 0.04914906103286387,
+        "mean": 0.040463615023474175
+      }
+    }
+  }
+}

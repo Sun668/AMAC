@@ -1,0 +1,26 @@
+\begin{tikzpicture}[
+  font=\footnotesize,
+  node distance=4mm,
+  block/.style={draw=teal!70!black, fill=teal!7, rounded corners=2pt, minimum height=7mm, minimum width=49mm, align=center},
+  contract/.style={draw=orange!80!black, fill=orange!8, rounded corners=2pt, minimum height=8mm, minimum width=49mm, align=center},
+  action/.style={draw=blue!65!black, fill=blue!7, rounded corners=2pt, minimum height=6mm, minimum width=14mm, align=center},
+  note/.style={draw=black!45, fill=black!3, rounded corners=2pt, align=center},
+  arrow/.style={-{Latex[length=2mm]}, thick}
+]
+\node[block] (arrival) {Visible prefix $S_k^\pi$, $\pi\in\mathrm{Perm}(T,A,V)$};
+\node[block, below=of arrival] (predictor) {Frozen subset predictor\\$\hat y_k=f_{S_k}(x_{S_k}),\quad s_k=q(\hat y_k)$};
+\node[block, below=of predictor] (risk) {Current-prefix risk\\$r_k=P(s_k=s^*\mid z_k)$};
+\node[contract, below=of risk] (state) {Stateful commitment contract $(\tau,\delta)$};
+\node[action, below=4mm of state.south, xshift=-17mm] (wait) {WAIT};
+\node[action, below=4mm of state.south] (commit) {COMMIT};
+\node[action, below=4mm of state.south, xshift=17mm] (revise) {REVISE};
+\node[note, below=8mm of commit] (final) {$k=3$ forces $c_3=s_3$; terminal TAV prediction is unchanged.};
+
+\draw[arrow] (arrival) -- (predictor);
+\draw[arrow] (predictor) -- (risk);
+\draw[arrow] (risk) -- (state);
+\draw[arrow] (state.south) -- ++(0,-2mm) -| (wait.north);
+\draw[arrow] (state.south) -- (commit.north);
+\draw[arrow] (state.south) -- ++(0,-2mm) -| (revise.north);
+\draw[-{Latex[length=1.5mm]}, dashed] (commit.south) -- (final.north);
+\end{tikzpicture}

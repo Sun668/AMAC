@@ -1,0 +1,14 @@
+{
+  "schema": "amac-cluster-statistics-manifest-v1",
+  "status": "completed_unvalidated",
+  "run_id": "cluster_statistics_v3",
+  "parameter_snapshot_sha256": "f9795ce79b4b3d169f60f8901010d4b0c6fe91b35cad04a317c323e208f24a53",
+  "protocol_version": "2026-09-03-amac-cluster-statistics-v3",
+  "artifacts": {
+    "metrics.json": "68f6221c76f91e4d0fa79c3d552ae9e244fefb25249b3c7ebe175f153a58592c",
+    "decision.json": "460e24acfc0c5031be5c3828f303dc11dbf95baf2dcaadbf7a647c17f17dc81f",
+    "cluster_intervals.csv": "4a2a3f3d11caf1048ffe91c1889a1897fc3ce1de8643135cf591471ad0fe7c58",
+    "source_disjoint_group_effects.csv": "94b091b91f76a6226cdd02a35bad327213b327ddc1090b64c8a304b0e198d8e4",
+    "costs.json": "f8e37c76513b9e1f480885859098b60196dc5a4dd8ff2fc942e9af5a25226ee3"
+  }
+}

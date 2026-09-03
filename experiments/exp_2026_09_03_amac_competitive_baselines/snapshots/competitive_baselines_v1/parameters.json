@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "experiment": "amac_competitive_baselines",
+  "run_id": "competitive_baselines_v1",
+  "source_result": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery",
+  "source_snapshot": "experiments/exp_2026_09_03_amac_chsimsv2_test/snapshots/chsimsv2_test_v1_recovery",
+  "seeds": [
+    1,
+    12,
+    123,
+    1234,
+    12345
+  ],
+  "conditions": [
+    "H0",
+    "B2",
+    "B4",
+    "LR",
+    "PLATT",
+    "ISO"
+  ],
+  "threshold_grid": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "margin_grid": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "target_coverage": 0.9,
+  "revision_weight": 0.25,
+  "wait_weight": 0.05,
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20260903,
+  "lr_noninferiority": {
+    "committed_error_rate": 0.01,
+    "revision_rate": 0.02,
+    "coverage": 0.03
+  },
+  "feature_based_utility_wins_required": 4,
+  "test_labels_used_for_fit_or_tuning": false,
+  "frozen_at": "2026-09-03T04:26:45.289888+00:00",
+  "artifacts": {
+    "source_predictions": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/predictions.npz",
+      "sha256": "fb0a0809449f08ff0e9caac9f25e510b8971dbb8859f7cab559cabe12862146e"
+    },
+    "source_rows": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/per_path.csv",
+      "sha256": "31594224a7654b57b482dcf19b9f2ecd639e9c9782ca6365c1bd5c09f24bfd7a"
+    },
+    "source_metrics": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/metrics.json",
+      "sha256": "4c59ab86f664f86e9234d698d7dcb07ba4a6c222c913d0b5a46bb0fb837135ac"
+    },
+    "source_validator": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/validator.json",
+      "sha256": "dace5463176ed85946372db13e2fce2a5a4aa5ad9f146c4f166d886b388bba25"
+    },
+    "source_parameters": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/snapshots/chsimsv2_test_v1_recovery/parameters.json",
+      "sha256": "a57fb7e90c799d9f5c25c2fe60f0991135f5a163d2db6817b26c69af70c8fecc"
+    },
+    "development_runner": {
+      "path": "experiments/exp_2026_09_03_amac_train_validation/scripts/run_development.py",
+      "sha256": "0d79396d851ac626d0fd892538b56d35cd28af49c7563c455c48f9be258219bd"
+    },
+    "runner": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/scripts/run_baselines.py",
+      "sha256": "c11701a26c2e183efd345450e36d7eeb17d47fda29351040b132b8d8e61df314"
+    },
+    "validator": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/scripts/validate_baselines.py",
+      "sha256": "15425e07093ad1e6621e378fe6287f249b838f89fd063f675ff420b1672fecd6"
+    }
+  }
+}

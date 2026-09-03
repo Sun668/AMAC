@@ -1,0 +1,10 @@
+{
+  "schema": "amac-masked-fusion-development-decision-v1",
+  "status": "completed",
+  "run_id": "masked_fusion_dev_v3",
+  "parameter_snapshot_sha256": "301f9c2c0d74e94700a8623d8da7979e11b01dbce1bba5edae473736b5316275",
+  "protocol_version": "2026-09-03-amac-masked-fusion-dev-v1",
+  "valid_result": true,
+  "continue_to_formal_test": false,
+  "paper_evidence": false
+}

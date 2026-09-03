@@ -1,0 +1,62 @@
+{
+  "schema": "amac-p0-robustness-manifest-v1",
+  "status": "completed_unvalidated",
+  "run_id": "p0_robustness_v2",
+  "parameter_snapshot_sha256": "ac5d9e019036cdd292d27c9a1ac07042f3bfec22c706acfd1caa97396a39ae15",
+  "source_artifacts": {
+    "primary_predictions": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/predictions.npz",
+      "sha256": "fb0a0809449f08ff0e9caac9f25e510b8971dbb8859f7cab559cabe12862146e"
+    },
+    "primary_rows": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/per_path.csv",
+      "sha256": "31594224a7654b57b482dcf19b9f2ecd639e9c9782ca6365c1bd5c09f24bfd7a"
+    },
+    "primary_metrics": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/metrics.json",
+      "sha256": "4c59ab86f664f86e9234d698d7dcb07ba4a6c222c913d0b5a46bb0fb837135ac"
+    },
+    "primary_snapshot": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/snapshots/chsimsv2_test_v1_recovery/parameters.json",
+      "sha256": "a57fb7e90c799d9f5c25c2fe60f0991135f5a163d2db6817b26c69af70c8fecc"
+    },
+    "primary_validator": {
+      "path": "experiments/exp_2026_09_03_amac_chsimsv2_test/results/chsimsv2_test_v1_recovery/validator.json",
+      "sha256": "dace5463176ed85946372db13e2fce2a5a4aa5ad9f146c4f166d886b388bba25"
+    },
+    "competitive_rows": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/results/competitive_baselines_v1/per_path.csv",
+      "sha256": "c57dd32d21a9fc775af585f804451d00074506ade30190a5b14fb5fdc1126fe0"
+    },
+    "competitive_scores": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/results/competitive_baselines_v1/scores.npz",
+      "sha256": "2db17d10872637ec77fbff4660f739ffa4746f22b38d2bfc014e2139dff1c01b"
+    },
+    "competitive_metrics": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/results/competitive_baselines_v1/metrics.json",
+      "sha256": "8fac400ecf260ca0eca5fbb19a76bd8150a8a7fe65a070fb62d1dda68cca54f0"
+    },
+    "competitive_snapshot": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/snapshots/competitive_baselines_v1/parameters.json",
+      "sha256": "a39751a0ca40b597f6d5c9520d3ea93d713d3177d478f238ceb20c0aa12efcb1"
+    },
+    "competitive_validator": {
+      "path": "experiments/exp_2026_09_03_amac_competitive_baselines/results/competitive_baselines_v1/validator.json",
+      "sha256": "efc4c0cf34706e0e83f6cd71ac862206711203ff2c79a33093e7a35fc8411a66"
+    },
+    "development_runner": {
+      "path": "experiments/exp_2026_09_03_amac_train_validation/scripts/run_development.py",
+      "sha256": "0d79396d851ac626d0fd892538b56d35cd28af49c7563c455c48f9be258219bd"
+    }
+  },
+  "artifacts": {
+    "source_split_audit.json": "268f3d45cb2bc249aa82e970ad0b57704bfa7bac54d700588fffbc7c059b08bf",
+    "current_operating_points.csv": "63e24f706b7b6c64f90fa298e4c0e80781b067a5a3073a9f26959e8a36004079",
+    "stage_metrics.csv": "84dcebd2aac8b6f686e11c7e2b55e59b2d28e79c3c20b8a5ed802fce4313ac4a",
+    "risk_coverage.csv": "86dbcfef43b88c6f327c2ad80c6f659a30a52b67f2fb49c2833aa66c080b57ba",
+    "bootstrap_intervals.csv": "5722ddac1895490a59ac3662c2a71f0be7c92970a6b3bcd2ba841c2fa37db657",
+    "metrics.json": "35841d17bd24abf5241b730ba07d8c15c9d4c3ae0c6fee5958e004d2e4d29712",
+    "decision.json": "3fe3ddd16aa88fc3271aeb8e4f60540c7ef66fb985a7feda063d4115569bdbf1",
+    "costs.json": "439aa68112c3481747a50f3c11d9043acbb01702ea901a7717a4b98d0bbcca92"
+  }
+}

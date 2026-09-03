@@ -1,0 +1,28 @@
+{
+  "schema": "amac-chsimsv2-test-manifest-v1",
+  "status": "completed_unvalidated",
+  "run_id": "chsimsv2_test_v1_recovery",
+  "parameter_snapshot_sha256": "a57fb7e90c799d9f5c25c2fe60f0991135f5a163d2db6817b26c69af70c8fecc",
+  "protocol_version": "2026-09-03-amac-chsimsv2-test-v1",
+  "dataset_sha256": "c5327d86ff1521395935d7b2929a3d3a56a9770a32edeb1feb16eac89177f8c5",
+  "used_splits": [
+    "train",
+    "test"
+  ],
+  "selection_split_used": false,
+  "counts": {
+    "seeds": 5,
+    "test_clips": 1034,
+    "paths_per_clip": 6,
+    "conditions": 7,
+    "rows": 217140
+  },
+  "artifacts": {
+    "metrics.json": "4c59ab86f664f86e9234d698d7dcb07ba4a6c222c913d0b5a46bb0fb837135ac",
+    "decision.json": "a16922fda12b03d7a6a1a436e285b4f56f878a99e970445e0884a56a01186b42",
+    "costs.json": "9a298d836fd59079ca364456224a52be2e4849c14516fd7ce8c6b5ac81186e25",
+    "per_path.csv": "31594224a7654b57b482dcf19b9f2ecd639e9c9782ca6365c1bd5c09f24bfd7a",
+    "predictions.npz": "fb0a0809449f08ff0e9caac9f25e510b8971dbb8859f7cab559cabe12862146e",
+    "models.pt": "3e0e40c0168990ba8f58ed29e3dae056304a41d09e8a8b6d209076b77cace16a"
+  }
+}

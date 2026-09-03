@@ -1,0 +1,15 @@
+{
+  "schema": "amac-cluster-statistics-validator-v3",
+  "status": "passed",
+  "run_id": "cluster_statistics_v3",
+  "parameter_snapshot_sha256": "f9795ce79b4b3d169f60f8901010d4b0c6fe91b35cad04a317c323e208f24a53",
+  "protocol_version": "2026-09-03-amac-cluster-statistics-v3",
+  "checks": {
+    "hashes": true,
+    "identity": true,
+    "cluster_intervals": true,
+    "per_group_effects": true,
+    "decision": true
+  },
+  "errors": []
+}

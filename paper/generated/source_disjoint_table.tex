@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\caption{Source-video-disjoint robustness subset: 190 clips from 15 test-only source groups. H0 is mean \(\pm\) sample standard deviation over five seeds. This post-hoc subset is supplementary.}
+\label{tab:source-disjoint}
+\begin{tabular}{lrrrrrr}
+\toprule
+Policy & Error (\%) & State cov. (\%) & Stage-2 cov. (\%) & Revision/path (\%) & Revision/opportunity (\%) & \(T_f\) \\
+\midrule
+B4 & 55.19 & 80.66 & 92.02 & 41.14 & 25.50 & 1.387 \\
+H0 & \(42.78\pm0.25\) & \(83.13\pm0.31\) & \(90.75\pm0.36\) & \(32.58\pm0.61\) & \(19.60\pm0.38\) & \(1.337\pm0.006\) \\
+LR & 43.18 & 83.60 & 91.93 & 33.86 & 20.25 & 1.328 \\
+Platt & 53.64 & 100.00 & 100.00 & 50.70 & 25.35 & 1.000 \\
+Isotonic & 54.25 & 96.45 & 99.56 & 45.70 & 23.69 & 1.071 \\
+\bottomrule
+\end{tabular}
+\end{table*}

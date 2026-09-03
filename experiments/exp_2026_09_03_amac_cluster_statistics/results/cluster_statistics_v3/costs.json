@@ -1,0 +1,9 @@
+{
+  "schema": "amac-cluster-statistics-costs-v1",
+  "status": "completed",
+  "run_id": "cluster_statistics_v3",
+  "parameter_snapshot_sha256": "f9795ce79b4b3d169f60f8901010d4b0c6fe91b35cad04a317c323e208f24a53",
+  "protocol_version": "2026-09-03-amac-cluster-statistics-v3",
+  "external_api_usd": 0.0,
+  "wall_seconds": 1.3197739124298096
+}

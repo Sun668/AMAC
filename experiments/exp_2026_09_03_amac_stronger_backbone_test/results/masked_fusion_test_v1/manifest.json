@@ -1,0 +1,30 @@
+{
+  "schema": "amac-masked-fusion-test-manifest-v1",
+  "status": "completed_unvalidated",
+  "run_id": "masked_fusion_test_v1",
+  "parameter_snapshot_sha256": "2de4dc06420c6ddb1ab5336c7411be1f7f810b732e1310e0948ac76759d43c61",
+  "protocol_version": "2026-09-03-amac-masked-fusion-test-v1",
+  "dataset_sha256": "c5327d86ff1521395935d7b2929a3d3a56a9770a32edeb1feb16eac89177f8c5",
+  "used_splits": [
+    "train",
+    "test"
+  ],
+  "selection_split_indexed": false,
+  "counts": {
+    "train": 2722,
+    "test": 1034,
+    "source_disjoint": 190,
+    "risk_seeds": 5,
+    "paths_per_clip": 6,
+    "conditions": 7,
+    "rows": 217140
+  },
+  "artifacts": {
+    "metrics.json": "b623f2182dafe23bb32c1a111ffa5d13c6d5919a9b1cf01ee2e16129942e0fc3",
+    "decision.json": "7ad921c4d5fe3096d196503b1137c2c99b7dad887446b26e458ac12c88a5edeb",
+    "costs.json": "712873c6d7195f9db75905a0fc25d466cdcc802e01be91c562065d77f3b0eb2c",
+    "per_path.csv": "3cb41b7f4a2406eb234a4589c340befed5b9b20ebdea1497f1df20c97cc4bc97",
+    "predictions.npz": "86344e1d3fecb9a05f01c47b5977a90b04dcabba2cba6fb0f7c5c43d79abfcf4",
+    "models.pt": "07fa106d5d7501ff359a772c464e53d5e45b06dd09c39a4f4d941629ae5d29b4"
+  }
+}

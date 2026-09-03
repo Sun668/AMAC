@@ -1,0 +1,9 @@
+{
+  "schema": "amac-development-costs-v1",
+  "status": "completed",
+  "run_id": "dev_chsimsv2_amac_mlp_v7_seed20260903",
+  "parameter_snapshot_sha256": "cf8909ce3b4a8a57edef9b8d500ea0c004dffd4fa77ce05cf8b3e4a677e94bd6",
+  "protocol_version": "2026-09-03-amac-v1",
+  "external_api_usd": 0.0,
+  "wall_seconds": 32.07124996185303
+}

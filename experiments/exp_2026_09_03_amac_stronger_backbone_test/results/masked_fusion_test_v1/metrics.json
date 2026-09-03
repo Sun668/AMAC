@@ -1,0 +1,1177 @@
+{
+  "schema": "amac-masked-fusion-test-metrics-v1",
+  "status": "completed",
+  "run_id": "masked_fusion_test_v1",
+  "parameter_snapshot_sha256": "2de4dc06420c6ddb1ab5336c7411be1f7f810b732e1310e0948ac76759d43c61",
+  "protocol_version": "2026-09-03-amac-masked-fusion-test-v1",
+  "terminal": {
+    "masked_fusion": {
+      "T": {
+        "Mult_acc_2": 0.7398452611218569,
+        "Mult_acc_3": 0.6653771760154739,
+        "Mult_acc_5": 0.45938104448742745,
+        "F1_score": 0.7408337114534661,
+        "MAE": 0.37849942943156917,
+        "Corr": 0.5697999136919687
+      },
+      "A": {
+        "Mult_acc_2": 0.5947775628626693,
+        "Mult_acc_3": 0.4574468085106383,
+        "Mult_acc_5": 0.3346228239845261,
+        "F1_score": 0.5937533191015437,
+        "MAE": 0.47994217298910513,
+        "Corr": 0.24951981614112057
+      },
+      "V": {
+        "Mult_acc_2": 0.7195357833655706,
+        "Mult_acc_3": 0.6199226305609284,
+        "Mult_acc_5": 0.41005802707930367,
+        "F1_score": 0.7174869376271699,
+        "MAE": 0.4125147266907895,
+        "Corr": 0.485512815427375
+      },
+      "TA": {
+        "Mult_acc_2": 0.7369439071566731,
+        "Mult_acc_3": 0.6586073500967118,
+        "Mult_acc_5": 0.4738878143133462,
+        "F1_score": 0.7378157559270938,
+        "MAE": 0.35728044044118323,
+        "Corr": 0.6021063799676628
+      },
+      "TV": {
+        "Mult_acc_2": 0.7901353965183753,
+        "Mult_acc_3": 0.7040618955512572,
+        "Mult_acc_5": 0.5,
+        "F1_score": 0.7911904936646776,
+        "MAE": 0.3176503742592881,
+        "Corr": 0.6905881855537637
+      },
+      "AV": {
+        "Mult_acc_2": 0.7021276595744681,
+        "Mult_acc_3": 0.6102514506769826,
+        "Mult_acc_5": 0.42940038684719534,
+        "F1_score": 0.7020351199946206,
+        "MAE": 0.3832807060064499,
+        "Corr": 0.5257820841084683
+      },
+      "TAV": {
+        "Mult_acc_2": 0.7823984526112185,
+        "Mult_acc_3": 0.7108317214700194,
+        "Mult_acc_5": 0.5212765957446809,
+        "F1_score": 0.7834356744143758,
+        "MAE": 0.30334465034896907,
+        "Corr": 0.7148376697994028
+      }
+    },
+    "ridge_reference": {
+      "T": {
+        "Mult_acc_2": 0.7108317214700194,
+        "Mult_acc_3": 0.6054158607350096,
+        "Mult_acc_5": 0.3452611218568665,
+        "F1_score": 0.7114317810100985,
+        "MAE": 0.4613850601064762,
+        "Corr": 0.49302516502934574
+      },
+      "A": {
+        "Mult_acc_2": 0.597678916827853,
+        "Mult_acc_3": 0.3839458413926499,
+        "Mult_acc_5": 0.26692456479690524,
+        "F1_score": 0.5941644706334925,
+        "MAE": 0.49444099669475045,
+        "Corr": 0.17965176639160016
+      },
+      "V": {
+        "Mult_acc_2": 0.7495164410058027,
+        "Mult_acc_3": 0.5793036750483559,
+        "Mult_acc_5": 0.3945841392649903,
+        "F1_score": 0.7459197688865544,
+        "MAE": 0.4073275362609343,
+        "Corr": 0.5173793616297164
+      },
+      "TA": {
+        "Mult_acc_2": 0.7108317214700194,
+        "Mult_acc_3": 0.6073500967117988,
+        "Mult_acc_5": 0.3568665377176016,
+        "F1_score": 0.7117603675372098,
+        "MAE": 0.4611982957714321,
+        "Corr": 0.49191862975829226
+      },
+      "TV": {
+        "Mult_acc_2": 0.7369439071566731,
+        "Mult_acc_3": 0.6344294003868471,
+        "Mult_acc_5": 0.36750483558994196,
+        "F1_score": 0.7375848761757957,
+        "MAE": 0.4275673114305486,
+        "Corr": 0.5719295202821874
+      },
+      "AV": {
+        "Mult_acc_2": 0.730174081237911,
+        "Mult_acc_3": 0.5783365570599613,
+        "Mult_acc_5": 0.3849129593810445,
+        "F1_score": 0.7288567652555695,
+        "MAE": 0.4030807136259471,
+        "Corr": 0.5304049825285717
+      },
+      "TAV": {
+        "Mult_acc_2": 0.7437137330754352,
+        "Mult_acc_3": 0.648936170212766,
+        "Mult_acc_5": 0.3955512572533849,
+        "F1_score": 0.7445367805931793,
+        "MAE": 0.4293112339125886,
+        "Corr": 0.5670223972718335
+      }
+    }
+  },
+  "source_disjoint_clip_count": 190,
+  "per_seed": {
+    "1": {
+      "policies": {
+        "B0": {
+          "paths": 6204,
+          "prefinal_commits": 12408,
+          "prefinal_errors": 4724,
+          "prefinal_committed_error_rate": 0.38072211476466794,
+          "committed_revision_rate": 0.5370728562217923,
+          "premature_exposure_rate": 0.2491940683430045,
+          "stage_two_coverage": 1.0,
+          "time_to_first_commit": 1.0,
+          "final_state_identity": 1.0
+        },
+        "B1": {
+          "paths": 6204,
+          "prefinal_commits": 0,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": null,
+          "committed_revision_rate": 0.0,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.0,
+          "time_to_first_commit": 3.0,
+          "final_state_identity": 1.0
+        },
+        "B2": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "B3": {
+          "paths": 6204,
+          "prefinal_commits": 4258,
+          "prefinal_errors": 1171,
+          "prefinal_committed_error_rate": 0.27501174260216066,
+          "committed_revision_rate": 0.11395873629916183,
+          "premature_exposure_rate": 0.05077369439071567,
+          "stage_two_coverage": 0.6863313990973565,
+          "time_to_first_commit": 2.3136686009026435,
+          "final_state_identity": 1.0
+        },
+        "B4": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "H0": {
+          "paths": 6204,
+          "prefinal_commits": 10378,
+          "prefinal_errors": 3123,
+          "prefinal_committed_error_rate": 0.3009250337251879,
+          "committed_revision_rate": 0.25209542230818827,
+          "premature_exposure_rate": 0.11895551257253385,
+          "stage_two_coverage": 0.9235976789168279,
+          "time_to_first_commit": 1.3272082527401676,
+          "final_state_identity": 1.0
+        },
+        "O1": {
+          "paths": 6204,
+          "prefinal_commits": 8201,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": 0.0,
+          "committed_revision_rate": 0.10847840103159252,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.7409735654416505,
+          "time_to_first_commit": 1.6781108961960025,
+          "final_state_identity": 1.0
+        }
+      },
+      "comparison": {
+        "error_reduction": 0.055615464411701676,
+        "coverage_gap": 0.01676337846550613,
+        "revision_relative_reduction": 0.25665399239543724,
+        "error_absolute_reduction_ci95": [
+          0.04328238781896756,
+          0.06827281780969735
+        ],
+        "revision_relative_reduction_ci95": [
+          0.2065092778223291,
+          0.3033616177428292
+        ]
+      },
+      "source_disjoint": {
+        "clip_count": 190,
+        "policies": {
+          "B0": {
+            "paths": 1140,
+            "prefinal_commits": 2280,
+            "prefinal_errors": 1118,
+            "prefinal_committed_error_rate": 0.4903508771929825,
+            "committed_revision_rate": 0.6877192982456141,
+            "premature_exposure_rate": 0.25,
+            "stage_two_coverage": 1.0,
+            "time_to_first_commit": 1.0,
+            "final_state_identity": 1.0
+          },
+          "B1": {
+            "paths": 1140,
+            "prefinal_commits": 0,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": null,
+            "committed_revision_rate": 0.0,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.0,
+            "time_to_first_commit": 3.0,
+            "final_state_identity": 1.0
+          },
+          "B2": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "B3": {
+            "paths": 1140,
+            "prefinal_commits": 704,
+            "prefinal_errors": 284,
+            "prefinal_committed_error_rate": 0.4034090909090909,
+            "committed_revision_rate": 0.156140350877193,
+            "premature_exposure_rate": 0.054385964912280704,
+            "stage_two_coverage": 0.6175438596491228,
+            "time_to_first_commit": 2.382456140350877,
+            "final_state_identity": 1.0
+          },
+          "B4": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "H0": {
+            "paths": 1140,
+            "prefinal_commits": 1788,
+            "prefinal_errors": 722,
+            "prefinal_committed_error_rate": 0.40380313199105144,
+            "committed_revision_rate": 0.29912280701754385,
+            "premature_exposure_rate": 0.09649122807017543,
+            "stage_two_coverage": 0.8824561403508772,
+            "time_to_first_commit": 1.431578947368421,
+            "final_state_identity": 1.0
+          },
+          "O1": {
+            "paths": 1140,
+            "prefinal_commits": 1292,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": 0.0,
+            "committed_revision_rate": 0.17982456140350878,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.6508771929824562,
+            "time_to_first_commit": 1.8666666666666667,
+            "final_state_identity": 1.0
+          }
+        },
+        "comparison": {
+          "error_reduction": 0.07748341771655087,
+          "coverage_gap": 0.04561403508771922,
+          "revision_relative_reduction": 0.2634989200863931,
+          "error_absolute_reduction_ci95": [
+            0.04063410600632339,
+            0.11562376475704648
+          ],
+          "revision_relative_reduction_ci95": [
+            0.14449294131603924,
+            0.3758499059853692
+          ]
+        }
+      },
+      "parameters": {
+        "B2": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "B4": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "H0": {
+          "threshold": 0.27,
+          "margin": 0.0
+        }
+      },
+      "training": {
+        "best_epoch": 8,
+        "calibration_loss": 0.5138487219810486
+      }
+    },
+    "12": {
+      "policies": {
+        "B0": {
+          "paths": 6204,
+          "prefinal_commits": 12408,
+          "prefinal_errors": 4724,
+          "prefinal_committed_error_rate": 0.38072211476466794,
+          "committed_revision_rate": 0.5370728562217923,
+          "premature_exposure_rate": 0.2491940683430045,
+          "stage_two_coverage": 1.0,
+          "time_to_first_commit": 1.0,
+          "final_state_identity": 1.0
+        },
+        "B1": {
+          "paths": 6204,
+          "prefinal_commits": 0,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": null,
+          "committed_revision_rate": 0.0,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.0,
+          "time_to_first_commit": 3.0,
+          "final_state_identity": 1.0
+        },
+        "B2": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "B3": {
+          "paths": 6204,
+          "prefinal_commits": 4258,
+          "prefinal_errors": 1171,
+          "prefinal_committed_error_rate": 0.27501174260216066,
+          "committed_revision_rate": 0.11395873629916183,
+          "premature_exposure_rate": 0.05077369439071567,
+          "stage_two_coverage": 0.6863313990973565,
+          "time_to_first_commit": 2.3136686009026435,
+          "final_state_identity": 1.0
+        },
+        "B4": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "H0": {
+          "paths": 6204,
+          "prefinal_commits": 10252,
+          "prefinal_errors": 3034,
+          "prefinal_committed_error_rate": 0.295942255169723,
+          "committed_revision_rate": 0.24194068343004513,
+          "premature_exposure_rate": 0.11283043197936815,
+          "stage_two_coverage": 0.9184397163120568,
+          "time_to_first_commit": 1.3475177304964538,
+          "final_state_identity": 1.0
+        },
+        "O1": {
+          "paths": 6204,
+          "prefinal_commits": 8201,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": 0.0,
+          "committed_revision_rate": 0.10847840103159252,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.7409735654416505,
+          "time_to_first_commit": 1.6781108961960025,
+          "final_state_identity": 1.0
+        }
+      },
+      "comparison": {
+        "error_reduction": 0.06059824296716659,
+        "coverage_gap": 0.011605415860735047,
+        "revision_relative_reduction": 0.28659695817490494,
+        "error_absolute_reduction_ci95": [
+          0.04819589321691873,
+          0.07329357058100078
+        ],
+        "revision_relative_reduction_ci95": [
+          0.23963069901986644,
+          0.33451777402174415
+        ]
+      },
+      "source_disjoint": {
+        "clip_count": 190,
+        "policies": {
+          "B0": {
+            "paths": 1140,
+            "prefinal_commits": 2280,
+            "prefinal_errors": 1118,
+            "prefinal_committed_error_rate": 0.4903508771929825,
+            "committed_revision_rate": 0.6877192982456141,
+            "premature_exposure_rate": 0.25,
+            "stage_two_coverage": 1.0,
+            "time_to_first_commit": 1.0,
+            "final_state_identity": 1.0
+          },
+          "B1": {
+            "paths": 1140,
+            "prefinal_commits": 0,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": null,
+            "committed_revision_rate": 0.0,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.0,
+            "time_to_first_commit": 3.0,
+            "final_state_identity": 1.0
+          },
+          "B2": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "B3": {
+            "paths": 1140,
+            "prefinal_commits": 704,
+            "prefinal_errors": 284,
+            "prefinal_committed_error_rate": 0.4034090909090909,
+            "committed_revision_rate": 0.156140350877193,
+            "premature_exposure_rate": 0.054385964912280704,
+            "stage_two_coverage": 0.6175438596491228,
+            "time_to_first_commit": 2.382456140350877,
+            "final_state_identity": 1.0
+          },
+          "B4": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "H0": {
+            "paths": 1140,
+            "prefinal_commits": 1752,
+            "prefinal_errors": 699,
+            "prefinal_committed_error_rate": 0.398972602739726,
+            "committed_revision_rate": 0.2850877192982456,
+            "premature_exposure_rate": 0.09035087719298246,
+            "stage_two_coverage": 0.8719298245614036,
+            "time_to_first_commit": 1.4631578947368422,
+            "final_state_identity": 1.0
+          },
+          "O1": {
+            "paths": 1140,
+            "prefinal_commits": 1292,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": 0.0,
+            "committed_revision_rate": 0.17982456140350878,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.6508771929824562,
+            "time_to_first_commit": 1.8666666666666667,
+            "final_state_identity": 1.0
+          }
+        },
+        "comparison": {
+          "error_reduction": 0.0823139469678763,
+          "coverage_gap": 0.03508771929824561,
+          "revision_relative_reduction": 0.2980561555075594,
+          "error_absolute_reduction_ci95": [
+            0.04511919887221043,
+            0.11900526420558638
+          ],
+          "revision_relative_reduction_ci95": [
+            0.18136915213846727,
+            0.4004474272930649
+          ]
+        }
+      },
+      "parameters": {
+        "B2": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "B4": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "H0": {
+          "threshold": 0.26,
+          "margin": 0.0
+        }
+      },
+      "training": {
+        "best_epoch": 6,
+        "calibration_loss": 0.5137494206428528
+      }
+    },
+    "123": {
+      "policies": {
+        "B0": {
+          "paths": 6204,
+          "prefinal_commits": 12408,
+          "prefinal_errors": 4724,
+          "prefinal_committed_error_rate": 0.38072211476466794,
+          "committed_revision_rate": 0.5370728562217923,
+          "premature_exposure_rate": 0.2491940683430045,
+          "stage_two_coverage": 1.0,
+          "time_to_first_commit": 1.0,
+          "final_state_identity": 1.0
+        },
+        "B1": {
+          "paths": 6204,
+          "prefinal_commits": 0,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": null,
+          "committed_revision_rate": 0.0,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.0,
+          "time_to_first_commit": 3.0,
+          "final_state_identity": 1.0
+        },
+        "B2": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "B3": {
+          "paths": 6204,
+          "prefinal_commits": 4258,
+          "prefinal_errors": 1171,
+          "prefinal_committed_error_rate": 0.27501174260216066,
+          "committed_revision_rate": 0.11395873629916183,
+          "premature_exposure_rate": 0.05077369439071567,
+          "stage_two_coverage": 0.6863313990973565,
+          "time_to_first_commit": 2.3136686009026435,
+          "final_state_identity": 1.0
+        },
+        "B4": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "H0": {
+          "paths": 6204,
+          "prefinal_commits": 10160,
+          "prefinal_errors": 3026,
+          "prefinal_committed_error_rate": 0.29783464566929135,
+          "committed_revision_rate": 0.24468085106382978,
+          "premature_exposure_rate": 0.11283043197936815,
+          "stage_two_coverage": 0.9177949709864603,
+          "time_to_first_commit": 1.3623468729851709,
+          "final_state_identity": 1.0
+        },
+        "O1": {
+          "paths": 6204,
+          "prefinal_commits": 8201,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": 0.0,
+          "committed_revision_rate": 0.10847840103159252,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.7409735654416505,
+          "time_to_first_commit": 1.6781108961960025,
+          "final_state_identity": 1.0
+        }
+      },
+      "comparison": {
+        "error_reduction": 0.05870585246759824,
+        "coverage_gap": 0.010960670535138606,
+        "revision_relative_reduction": 0.2785171102661597,
+        "error_absolute_reduction_ci95": [
+          0.045999565225508646,
+          0.07109328985349321
+        ],
+        "revision_relative_reduction_ci95": [
+          0.2293632238750117,
+          0.325279796301457
+        ]
+      },
+      "source_disjoint": {
+        "clip_count": 190,
+        "policies": {
+          "B0": {
+            "paths": 1140,
+            "prefinal_commits": 2280,
+            "prefinal_errors": 1118,
+            "prefinal_committed_error_rate": 0.4903508771929825,
+            "committed_revision_rate": 0.6877192982456141,
+            "premature_exposure_rate": 0.25,
+            "stage_two_coverage": 1.0,
+            "time_to_first_commit": 1.0,
+            "final_state_identity": 1.0
+          },
+          "B1": {
+            "paths": 1140,
+            "prefinal_commits": 0,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": null,
+            "committed_revision_rate": 0.0,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.0,
+            "time_to_first_commit": 3.0,
+            "final_state_identity": 1.0
+          },
+          "B2": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "B3": {
+            "paths": 1140,
+            "prefinal_commits": 704,
+            "prefinal_errors": 284,
+            "prefinal_committed_error_rate": 0.4034090909090909,
+            "committed_revision_rate": 0.156140350877193,
+            "premature_exposure_rate": 0.054385964912280704,
+            "stage_two_coverage": 0.6175438596491228,
+            "time_to_first_commit": 2.382456140350877,
+            "final_state_identity": 1.0
+          },
+          "B4": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "H0": {
+            "paths": 1140,
+            "prefinal_commits": 1740,
+            "prefinal_errors": 705,
+            "prefinal_committed_error_rate": 0.4051724137931034,
+            "committed_revision_rate": 0.29385964912280704,
+            "premature_exposure_rate": 0.09035087719298246,
+            "stage_two_coverage": 0.8736842105263158,
+            "time_to_first_commit": 1.4736842105263157,
+            "final_state_identity": 1.0
+          },
+          "O1": {
+            "paths": 1140,
+            "prefinal_commits": 1292,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": 0.0,
+            "committed_revision_rate": 0.17982456140350878,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.6508771929824562,
+            "time_to_first_commit": 1.8666666666666667,
+            "final_state_identity": 1.0
+          }
+        },
+        "comparison": {
+          "error_reduction": 0.07611413591449889,
+          "coverage_gap": 0.0368421052631579,
+          "revision_relative_reduction": 0.27645788336933036,
+          "error_absolute_reduction_ci95": [
+            0.03913044841284732,
+            0.11300861278079177
+          ],
+          "revision_relative_reduction_ci95": [
+            0.15212527964205821,
+            0.3868954883626336
+          ]
+        }
+      },
+      "parameters": {
+        "B2": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "B4": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "H0": {
+          "threshold": 0.29,
+          "margin": 0.0
+        }
+      },
+      "training": {
+        "best_epoch": 18,
+        "calibration_loss": 0.513329803943634
+      }
+    },
+    "1234": {
+      "policies": {
+        "B0": {
+          "paths": 6204,
+          "prefinal_commits": 12408,
+          "prefinal_errors": 4724,
+          "prefinal_committed_error_rate": 0.38072211476466794,
+          "committed_revision_rate": 0.5370728562217923,
+          "premature_exposure_rate": 0.2491940683430045,
+          "stage_two_coverage": 1.0,
+          "time_to_first_commit": 1.0,
+          "final_state_identity": 1.0
+        },
+        "B1": {
+          "paths": 6204,
+          "prefinal_commits": 0,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": null,
+          "committed_revision_rate": 0.0,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.0,
+          "time_to_first_commit": 3.0,
+          "final_state_identity": 1.0
+        },
+        "B2": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "B3": {
+          "paths": 6204,
+          "prefinal_commits": 4258,
+          "prefinal_errors": 1171,
+          "prefinal_committed_error_rate": 0.27501174260216066,
+          "committed_revision_rate": 0.11395873629916183,
+          "premature_exposure_rate": 0.05077369439071567,
+          "stage_two_coverage": 0.6863313990973565,
+          "time_to_first_commit": 2.3136686009026435,
+          "final_state_identity": 1.0
+        },
+        "B4": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "H0": {
+          "paths": 6204,
+          "prefinal_commits": 10313,
+          "prefinal_errors": 3094,
+          "prefinal_committed_error_rate": 0.30000969649956366,
+          "committed_revision_rate": 0.2506447453255964,
+          "premature_exposure_rate": 0.115892972275951,
+          "stage_two_coverage": 0.9240812379110251,
+          "time_to_first_commit": 1.337685364281109,
+          "final_state_identity": 1.0
+        },
+        "O1": {
+          "paths": 6204,
+          "prefinal_commits": 8201,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": 0.0,
+          "committed_revision_rate": 0.10847840103159252,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.7409735654416505,
+          "time_to_first_commit": 1.6781108961960025,
+          "final_state_identity": 1.0
+        }
+      },
+      "comparison": {
+        "error_reduction": 0.056530801637325934,
+        "coverage_gap": 0.017246937459703404,
+        "revision_relative_reduction": 0.26093155893536124,
+        "error_absolute_reduction_ci95": [
+          0.04343014145616796,
+          0.06929027340280852
+        ],
+        "revision_relative_reduction_ci95": [
+          0.2111901865369018,
+          0.3100976959860401
+        ]
+      },
+      "source_disjoint": {
+        "clip_count": 190,
+        "policies": {
+          "B0": {
+            "paths": 1140,
+            "prefinal_commits": 2280,
+            "prefinal_errors": 1118,
+            "prefinal_committed_error_rate": 0.4903508771929825,
+            "committed_revision_rate": 0.6877192982456141,
+            "premature_exposure_rate": 0.25,
+            "stage_two_coverage": 1.0,
+            "time_to_first_commit": 1.0,
+            "final_state_identity": 1.0
+          },
+          "B1": {
+            "paths": 1140,
+            "prefinal_commits": 0,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": null,
+            "committed_revision_rate": 0.0,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.0,
+            "time_to_first_commit": 3.0,
+            "final_state_identity": 1.0
+          },
+          "B2": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "B3": {
+            "paths": 1140,
+            "prefinal_commits": 704,
+            "prefinal_errors": 284,
+            "prefinal_committed_error_rate": 0.4034090909090909,
+            "committed_revision_rate": 0.156140350877193,
+            "premature_exposure_rate": 0.054385964912280704,
+            "stage_two_coverage": 0.6175438596491228,
+            "time_to_first_commit": 2.382456140350877,
+            "final_state_identity": 1.0
+          },
+          "B4": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "H0": {
+            "paths": 1140,
+            "prefinal_commits": 1774,
+            "prefinal_errors": 716,
+            "prefinal_committed_error_rate": 0.4036076662908681,
+            "committed_revision_rate": 0.2982456140350877,
+            "premature_exposure_rate": 0.09210526315789473,
+            "stage_two_coverage": 0.8824561403508772,
+            "time_to_first_commit": 1.443859649122807,
+            "final_state_identity": 1.0
+          },
+          "O1": {
+            "paths": 1140,
+            "prefinal_commits": 1292,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": 0.0,
+            "committed_revision_rate": 0.17982456140350878,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.6508771929824562,
+            "time_to_first_commit": 1.8666666666666667,
+            "final_state_identity": 1.0
+          }
+        },
+        "comparison": {
+          "error_reduction": 0.07767888341673423,
+          "coverage_gap": 0.04561403508771922,
+          "revision_relative_reduction": 0.265658747300216,
+          "error_absolute_reduction_ci95": [
+            0.04076698847866267,
+            0.114260859844182
+          ],
+          "revision_relative_reduction_ci95": [
+            0.1411726998491705,
+            0.38106295372050797
+          ]
+        }
+      },
+      "parameters": {
+        "B2": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "B4": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "H0": {
+          "threshold": 0.27,
+          "margin": 0.0
+        }
+      },
+      "training": {
+        "best_epoch": 15,
+        "calibration_loss": 0.5138196349143982
+      }
+    },
+    "12345": {
+      "policies": {
+        "B0": {
+          "paths": 6204,
+          "prefinal_commits": 12408,
+          "prefinal_errors": 4724,
+          "prefinal_committed_error_rate": 0.38072211476466794,
+          "committed_revision_rate": 0.5370728562217923,
+          "premature_exposure_rate": 0.2491940683430045,
+          "stage_two_coverage": 1.0,
+          "time_to_first_commit": 1.0,
+          "final_state_identity": 1.0
+        },
+        "B1": {
+          "paths": 6204,
+          "prefinal_commits": 0,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": null,
+          "committed_revision_rate": 0.0,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.0,
+          "time_to_first_commit": 3.0,
+          "final_state_identity": 1.0
+        },
+        "B2": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "B3": {
+          "paths": 6204,
+          "prefinal_commits": 4258,
+          "prefinal_errors": 1171,
+          "prefinal_committed_error_rate": 0.27501174260216066,
+          "committed_revision_rate": 0.11395873629916183,
+          "premature_exposure_rate": 0.05077369439071567,
+          "stage_two_coverage": 0.6863313990973565,
+          "time_to_first_commit": 2.3136686009026435,
+          "final_state_identity": 1.0
+        },
+        "B4": {
+          "paths": 6204,
+          "prefinal_commits": 10198,
+          "prefinal_errors": 3636,
+          "prefinal_committed_error_rate": 0.3565404981368896,
+          "committed_revision_rate": 0.33913604126370084,
+          "premature_exposure_rate": 0.17295293359123146,
+          "stage_two_coverage": 0.9068343004513217,
+          "time_to_first_commit": 1.3562217923920052,
+          "final_state_identity": 1.0
+        },
+        "H0": {
+          "paths": 6204,
+          "prefinal_commits": 10257,
+          "prefinal_errors": 3035,
+          "prefinal_committed_error_rate": 0.29589548600955445,
+          "committed_revision_rate": 0.24613152804642166,
+          "premature_exposure_rate": 0.11315280464216634,
+          "stage_two_coverage": 0.9221470019342359,
+          "time_to_first_commit": 1.3467117988394584,
+          "final_state_identity": 1.0
+        },
+        "O1": {
+          "paths": 6204,
+          "prefinal_commits": 8201,
+          "prefinal_errors": 0,
+          "prefinal_committed_error_rate": 0.0,
+          "committed_revision_rate": 0.10847840103159252,
+          "premature_exposure_rate": 0.0,
+          "stage_two_coverage": 0.7409735654416505,
+          "time_to_first_commit": 1.6781108961960025,
+          "final_state_identity": 1.0
+        }
+      },
+      "comparison": {
+        "error_reduction": 0.06064501212733514,
+        "coverage_gap": 0.015312701482914193,
+        "revision_relative_reduction": 0.27423954372623577,
+        "error_absolute_reduction_ci95": [
+          0.04855990426795896,
+          0.0734837877634392
+        ],
+        "revision_relative_reduction_ci95": [
+          0.22408636879571806,
+          0.3210965390884964
+        ]
+      },
+      "source_disjoint": {
+        "clip_count": 190,
+        "policies": {
+          "B0": {
+            "paths": 1140,
+            "prefinal_commits": 2280,
+            "prefinal_errors": 1118,
+            "prefinal_committed_error_rate": 0.4903508771929825,
+            "committed_revision_rate": 0.6877192982456141,
+            "premature_exposure_rate": 0.25,
+            "stage_two_coverage": 1.0,
+            "time_to_first_commit": 1.0,
+            "final_state_identity": 1.0
+          },
+          "B1": {
+            "paths": 1140,
+            "prefinal_commits": 0,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": null,
+            "committed_revision_rate": 0.0,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.0,
+            "time_to_first_commit": 3.0,
+            "final_state_identity": 1.0
+          },
+          "B2": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "B3": {
+            "paths": 1140,
+            "prefinal_commits": 704,
+            "prefinal_errors": 284,
+            "prefinal_committed_error_rate": 0.4034090909090909,
+            "committed_revision_rate": 0.156140350877193,
+            "premature_exposure_rate": 0.054385964912280704,
+            "stage_two_coverage": 0.6175438596491228,
+            "time_to_first_commit": 2.382456140350877,
+            "final_state_identity": 1.0
+          },
+          "B4": {
+            "paths": 1140,
+            "prefinal_commits": 1710,
+            "prefinal_errors": 823,
+            "prefinal_committed_error_rate": 0.4812865497076023,
+            "committed_revision_rate": 0.40614035087719297,
+            "premature_exposure_rate": 0.16403508771929826,
+            "stage_two_coverage": 0.8368421052631579,
+            "time_to_first_commit": 1.5,
+            "final_state_identity": 1.0
+          },
+          "H0": {
+            "paths": 1140,
+            "prefinal_commits": 1755,
+            "prefinal_errors": 696,
+            "prefinal_committed_error_rate": 0.39658119658119656,
+            "committed_revision_rate": 0.29210526315789476,
+            "premature_exposure_rate": 0.08771929824561403,
+            "stage_two_coverage": 0.8780701754385964,
+            "time_to_first_commit": 1.4605263157894737,
+            "final_state_identity": 1.0
+          },
+          "O1": {
+            "paths": 1140,
+            "prefinal_commits": 1292,
+            "prefinal_errors": 0,
+            "prefinal_committed_error_rate": 0.0,
+            "committed_revision_rate": 0.17982456140350878,
+            "premature_exposure_rate": 0.0,
+            "stage_two_coverage": 0.6508771929824562,
+            "time_to_first_commit": 1.8666666666666667,
+            "final_state_identity": 1.0
+          }
+        },
+        "comparison": {
+          "error_reduction": 0.08470535312640576,
+          "coverage_gap": 0.0412280701754385,
+          "revision_relative_reduction": 0.2807775377969762,
+          "error_absolute_reduction_ci95": [
+            0.04855473239767559,
+            0.12009550003145728
+          ],
+          "revision_relative_reduction_ci95": [
+            0.16498545840746034,
+            0.38979872683018163
+          ]
+        }
+      },
+      "parameters": {
+        "B2": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "B4": {
+          "threshold": 0.2,
+          "margin": 0.0
+        },
+        "H0": {
+          "threshold": 0.28,
+          "margin": 0.0
+        }
+      },
+      "training": {
+        "best_epoch": 5,
+        "calibration_loss": 0.5142579674720764
+      }
+    }
+  },
+  "validity_checks": {
+    "train_test_disjoint": true,
+    "finite_predictions": true,
+    "five_seeds": true,
+    "final_identity": true,
+    "source_disjoint_nonempty": true
+  },
+  "performance_checks": {
+    "terminal_mae": true,
+    "coverage": true,
+    "matched_coverage": true,
+    "error_effect": true,
+    "error_intervals": true
+  }
+}
