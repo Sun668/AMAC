@@ -3,9 +3,9 @@
 Official research artifacts for **AMAC: Risk-Aware Commitment under Asynchronous Modality Arrival for Multimodal Affective Agents**.
 
 Repository: <https://github.com/Sun668/AMAC>  
-Manuscript release: [`1.0.0`](https://github.com/Sun668/AMAC/tree/1.0.0)
+Manuscript Git tag: [`1.0.0`](https://github.com/Sun668/AMAC/tree/1.0.0)
 
-AMAC separates terminal multimodal recognition from the decision to expose an intermediate affect state. Given modalities arriving in an arbitrary order, the stateful contract emits `WAIT`, `COMMIT`, or `REVISE`, while forcing the terminal state to equal the complete text-audio-vision prediction.
+AMAC separates terminal multimodal recognition from the decision to expose an intermediate affect state. Each complete clip is replayed under all six simulated orders of text, audio, and vision. The stateful contract emits `WAIT`, `COMMIT`, `HOLD`, or `REVISE`, while forcing the terminal state to equal the complete text-audio-vision prediction. `HOLD` means that an existing committed state remains exposed when no revision occurs.
 
 ## Repository contents
 
@@ -14,11 +14,11 @@ AMAC separates terminal multimodal recognition from the decision to expose an in
 - `internal/tools/`: JSON-facing stateful Agent tool with `start`, `observe`, and `reset` operations.
 - `experiments/`: only the development, official-split, robustness, external descriptive, statistical, and replay code used by the manuscript.
 - `experiments/**/snapshots/`: frozen parameters for the authoritative successful runs.
-- `experiments/**/results/`: compact metrics, manifests, decisions, intervals, and validator reports used by the paper.
+- `experiments/**/results/`: compact metrics, decision manifests, intervals, artifact identities, and validator reports used by the paper.
 
 ## Excluded artifacts
 
-Raw CH-SIMS v2 and EmotionTalk data are not redistributed because their licenses and access terms apply. Caches, extracted tensors, checkpoints, failed exploratory runs, and large row-level outputs are also excluded. The compact manifests retain artifact identities and hashes; larger reproducibility bundles can be attached to a tagged release where licensing permits.
+Raw CH-SIMS v2 and EmotionTalk data are not redistributed because their licenses and access terms apply. Caches, extracted tensors, checkpoints, failed exploratory runs, and large row-level outputs are also excluded. The compact decision manifests retain artifact identities and hashes; larger reproducibility bundles may be distributed separately where licensing permits.
 
 ## Python environment
 
@@ -51,4 +51,4 @@ cd paper
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=output main.tex
 ```
 
-The repository is prepared for an arXiv source package and later IEEE submission. Author identity, affiliation, funding, repository revision, and venue-specific declarations must be completed before submission.
+The repository is prepared for an arXiv source package and later IEEE submission. The author name and affiliation are present in the manuscript; corresponding email, ORCID, funding, immutable submission revision, and venue-specific declarations must be completed where required.
