@@ -180,7 +180,7 @@ The primary CH-SIMS v2 experiment uses the five intentional random seeds $(1,12,
 
 A post-hoc threshold sweep from 0 to 1 in increments of 0.01 yields descriptive risk--coverage curves while holding each policy's calibration-selected $\delta$ fixed. Duplicate coverage points are averaged, errors at 80\% and 90\% coverage are linearly interpolated, and normalized AURC is the trapezoidal integral over 501 equally spaced points in the shared 75--100\% committed-state coverage interval. These sweeps neither select deployment thresholds nor create a confirmatory test.
 
-The primary gate requires H0 to maintain $C\geq0.90$, reduce $E$ by at least two percentage points relative to B4, reduce $R$ by at least 20\% relative to B4, and obtain a positive paired interval for both effects in every seed. The later LR comparison used numerical tolerances of 0.01 for $E$, 0.02 for $R$, and 0.03 for coverage loss, but these post-hoc tolerances have no confirmatory interpretation. A result directory is immutable after creation. Each formal run stores parameters, source and code hashes, row-level decisions, aggregate metrics, and an independent validator report.
+The primary gate requires H0 to maintain $C\geq0.90$, reduce $E$ by at least two percentage points relative to B4, reduce $R$ by at least 20\% relative to B4, and obtain a positive paired interval for both effects in every seed. The later LR comparison used numerical tolerances of 0.01 for $E$, 0.02 for $R$, and 0.03 for coverage loss, but these post-hoc tolerances have no confirmatory interpretation. A result directory is immutable after creation. Each formal run stores parameters, source and code hashes, compact decision manifests, aggregate metrics, and an independent validator report.
 
 \section{Results}
 
@@ -337,7 +337,7 @@ The CH-SIMS v2 official-split test finds lower committed error and revision than
 \section{Formal Run Inventory}
 \label{app:runs}
 
-Table~\ref{tab:runs} identifies the immutable experiment outputs used by the manuscript. Each run identifier resolves under its experiment's \texttt{results/} directory in the public artifact release.
+Table~\ref{tab:runs} identifies the immutable experiment outputs used by the manuscript. In the tagged tree, each run identifier resolves under an \texttt{experiments/exp\_2026\_09\_03\_*/results/} directory.
 
 \begin{table}[h]
 \centering
