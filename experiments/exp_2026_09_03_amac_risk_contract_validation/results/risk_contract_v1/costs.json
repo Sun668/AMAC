@@ -1,9 +1,0 @@
-{
-  "schema": "amac-risk-contract-costs-v1",
-  "status": "completed",
-  "run_id": "risk_contract_v1",
-  "parameter_snapshot_sha256": "e1e4beb2aff1eae5ab839e84da1501711b5d985998d6f8b6329919782ee43efb",
-  "protocol_version": "2026-09-03-amac-risk-contract-v1",
-  "external_api_usd": 0.0,
-  "wall_seconds": 79.76901197433472
-}

@@ -1,0 +1,25 @@
+{
+  "schema": "amac-weight-release-v1",
+  "checkpoints": [
+    {
+      "file": "chsimsv2_correctness_ensemble.pt",
+      "source_run": "chsimsv2_test_v1_recovery",
+      "sha256": "3e0e40c0168990ba8f58ed29e3dae056304a41d09e8a8b6d209076b77cace16a",
+      "contents": "five correctness MLP seeds and feature scalers"
+    },
+    {
+      "file": "chsimsv2_masked_fusion.pt",
+      "source_run": "masked_fusion_test_v1",
+      "sha256": "07fa106d5d7501ff359a772c464e53d5e45b06dd09c39a4f4d941629ae5d29b4",
+      "contents": "masked-fusion backbone, fold metadata, modality scalers, and five correctness MLP seeds"
+    },
+    {
+      "file": "emotiontalk_correctness_ensemble.pt",
+      "source_run": "emotiontalk_external_v1_recovery",
+      "sha256": "9b7ed8bc3205b428b0b3b538f407d15aeea02f1df3844d1b7085f99a0c7ef724",
+      "contents": "five annotation-derived correctness MLP seeds and feature scalers"
+    }
+  ],
+  "ridge_checkpoint": null,
+  "ridge_note": "The formal run refits Ridge deterministically from restricted official features and did not serialize a standalone checkpoint."
+}

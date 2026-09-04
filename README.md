@@ -1,54 +1,42 @@
 # AMAC
 
-Official research artifacts for **AMAC: Risk-Aware Commitment under Asynchronous Modality Arrival for Multimodal Affective Agents**.
+Official paper, reusable model implementation, trained checkpoints, and compact
+claim evidence for AMAC: Risk-Aware Commitment under Asynchronous Modality
+Arrival for Multimodal Affective Agents.
 
-Repository: <https://github.com/Sun668/AMAC>  
-Manuscript Git tag: [`1.0.0`](https://github.com/Sun668/AMAC/tree/1.0.0)
+## Repository layout
 
-AMAC separates terminal multimodal recognition from the decision to expose an intermediate affect state. Each complete clip is replayed under all six simulated orders of text, audio, and vision. The stateful contract emits `WAIT`, `COMMIT`, `HOLD`, or `REVISE`, while forcing the terminal state to equal the complete text-audio-vision prediction. `HOLD` means that an existing committed state remains exposed when no revision occurs.
+- models/: model definitions, feature construction, training and inference
+  helpers, and the executable Go Agent contract.
+- weights/: formal neural checkpoints used in the manuscript, with SHA-256
+  hashes and provenance.
+- paper/: LaTeX source, PDF, figures, submission notes, and compact evidence.
+- paper/evidence/: final metrics, frozen parameters, manifests, and independent
+  validator reports only.
 
-## Repository contents
+The repository excludes restricted datasets, raw media, official feature
+containers, development notebooks, experiment orchestration, PLAN and TODO
+files, caches, and per-path bulk outputs.
 
-- `paper/`: IEEEtran LaTeX source, generated tables, evidence notes, references, and the current PDF.
-- `internal/affectcontract/`: standalone Go state-transition contract.
-- `internal/tools/`: JSON-facing stateful Agent tool with `start`, `observe`, and `reset` operations.
-- `experiments/`: only the development, official-split, robustness, external descriptive, statistical, and replay code used by the manuscript.
-- `experiments/**/snapshots/`: frozen parameters for the authoritative successful runs.
-- `experiments/**/results/`: compact metrics, decision manifests, intervals, artifact identities, and validator reports used by the paper.
+## Model setup
 
-## Excluded artifacts
+Create a Python environment and install requirements.txt. Loaders in
+models.checkpoints consume checkpoints in weights/. Real prefix features must be
+constructed with models.features and the frozen settings in the corresponding
+paper/evidence/<run-id>/parameters.json.
 
-Raw CH-SIMS v2 and EmotionTalk data are not redistributed because their licenses and access terms apply. Caches, extracted tensors, checkpoints, failed exploratory runs, and large row-level outputs are also excluded. The compact decision manifests retain artifact identities and hashes; larger reproducibility bundles may be distributed separately where licensing permits.
+## Evidence boundary
 
-## Python environment
+The paper uses the official CH-SIMS v2 split under all six simulated arrival
+orders. Main numbers are official-split operating-point results, not a
+cross-source generalization claim. EmotionTalk is an annotation-derived,
+three-held-out-group descriptive check, not raw-media end-to-end transfer.
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+Compact evidence directories preserve published metrics and validation status.
+They are not full experiment histories and do not replace access to licensed
+datasets.
 
-Each experiment directory contains its own `README.md`, `PLAN.md`, frozen parameters, runner, validator, and authoritative compact results. Dataset paths must be supplied according to the corresponding experiment documentation.
+## Paper
 
-## Go affect contract
-
-```bash
-go test ./...
-```
-
-The replay runner is located at:
-
-```text
-experiments/exp_2026_09_03_affect_contract_agent_replay/scripts/replay.go
-```
-
-Its input is generated from the formal path-level output by `prepare_replay.py`; the large generated JSONL is not stored in Git.
-
-## Build the paper
-
-```bash
-cd paper
-latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=output main.tex
-```
-
-The repository is prepared for an arXiv source package and later IEEE submission. The author name and affiliation are present in the manuscript; corresponding email, ORCID, funding, immutable submission revision, and venue-specific declarations must be completed where required.
+The manuscript source is paper/main.tex. See paper/ARXIV_SUBMISSION.md for the
+arXiv checklist.

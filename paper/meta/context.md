@@ -8,7 +8,7 @@ the final prediction produced from all three modalities?
 
 Method: AMAC estimates whether the current prefix state is correct and applies a
 frozen threshold and revision margin. The third modality always forces the full
-TAV state. LR is the deployment estimator; H0 is retained as the preregistered
+TAV state. LR is the deployment estimator; H0 is retained as the condition fixed in the archived local protocol before sealed-test evaluation and the
 primary-test estimator.
 
 Evidence: CH-SIMS v2 one-shot test, EmotionTalk contract-level external test,

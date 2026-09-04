@@ -1,9 +1,0 @@
-{
-  "schema": "research-experiment-result-v1",
-  "status": "completed",
-  "run_id": "risk_contract_v1",
-  "parameter_snapshot_sha256": "e1e4beb2aff1eae5ab839e84da1501711b5d985998d6f8b6329919782ee43efb",
-  "protocol_version": "2026-09-03-amac-risk-contract-v1",
-  "validator_status": "passed",
-  "decision": "H0 selected; one-shot CH-SIMS v2 test authorized"
-}

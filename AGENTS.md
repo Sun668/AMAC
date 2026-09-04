@@ -1,16 +1,30 @@
 # AMAC repository instructions
 
 ## Scope
-- This repository contains only the AMAC paper, its direct reproduction code, frozen configurations, compact evidence artifacts, and the stateful Go affect contract.
-- Do not add application UI, 3D assets, long-term memory research, unrelated affect-agent directions, exploratory failures, datasets, caches, or model weights.
 
-## Experiment integrity
-- Never use sealed-test data to select features, thresholds, prompts, checkpoints, or exclusions.
-- Preserve source-group splits and distinguish official dataset tasks from the asynchronous modality-arrival protocol.
-- Every formal run must keep parameters, hashes, metrics, and validator output in its own experiment directory.
-- Do not overwrite frozen snapshots or successful result directories.
-- Claims must remain within the boundaries stated in the manuscript and paper/meta/claim_evidence_ledger.md.
+This publication release has three substantive areas:
 
-## Go interface
-- JSON tool responses contain code and message fields.
-- Runtime errors remain in Chinese to match the evaluated implementation.
+- models/: reusable Python model code and the Go Agent contract.
+- weights/: formal trained neural checkpoints and hashes.
+- paper/: manuscript sources and compact final claim evidence.
+
+Do not add application UI, unrelated research, raw datasets, private media,
+caches, notebooks, experiment orchestration, PLAN or TODO files, or ad-hoc
+diagnostic outputs.
+
+## Evidence rules
+
+- Treat paper/evidence/ as immutable publication evidence.
+- Do not overwrite an existing evidence directory.
+- Do not claim that compact evidence is a complete experiment history.
+- Do not claim cross-source generalization from the official CH-SIMS v2 split.
+- Treat EmotionTalk as an annotation-derived descriptive check over three
+  held-out groups.
+- Do not present the MLP architecture itself as the paper contribution.
+
+## Weight rules
+
+- Only checkpoints used by a reported manuscript result belong in weights/.
+- Every checkpoint must have a source run and SHA-256 entry in
+  weights/manifest.json and weights/SHA256SUMS.
+- Restricted datasets and feature containers must not be committed.

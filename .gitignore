@@ -11,3 +11,5 @@ paper/tmp/
 *.pth
 *.npz
 *.npy
+!weights/
+!weights/*.pt
